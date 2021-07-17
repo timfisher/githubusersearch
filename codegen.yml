@@ -1,0 +1,12 @@
+overwrite: true
+schema: "/Users/tim.fisher/Documents/Code/githubsearch/schema.docs.graphql"
+documents: "src/queries.ts"
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"

@@ -1,0 +1,6 @@
+{
+    "testFiles": "**/*.feature",
+    "video": false,
+    "baseUrl": "http://localhost:3000",
+    "defaultTimeout": 10000
+}

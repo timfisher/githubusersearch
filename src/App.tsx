@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SearchResultsContainer from "./components/SearchResults";
+import { useState } from "react";
+import styled from "styled-components";
+
+const MAX_REPOSITORIES = 10;
+const MAX_USERS = 50;
+
+const onChange =
+  (setUsername: React.Dispatch<React.SetStateAction<string>>) =>
+  (e: React.FormEvent<HTMLInputElement>) => {
+    setUsername(e.currentTarget.value);
+  };
 
 function App() {
+  const [username, setUsername] = useState<string>("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <label htmlFor="username">Search username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        onChange={onChange(setUsername)}
+      />
+      <SearchResultsContainer
+        user={username}
+        maxUsers={MAX_USERS}
+        maxRepositories={MAX_REPOSITORIES}
+      />
+    </AppContainer>
   );
 }
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  place-items: center stretch;
+`;
 
 export default App;

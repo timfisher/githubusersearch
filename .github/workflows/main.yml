@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install dependencies, lint, test
+        uses: cypress-io/github-action@v2
+        with:
+          runTests: false
+      - run: yarn lint
+      - run: yarn test
+      - name: Run e2e tests
+        uses: cypress-io/github-action@v2
+        with:
+          # we have already installed all dependencies above
+          install: false
+          start: yarn start
+          # wait for all services to respond
+          wait-on: "http://0.0.0.0:3000"
+          # wait for 5 minutes for the server to respond
+          wait-on-timeout: 300
+          command: yarn test:e2e
+          config: baseUrl=http://0.0.0.0:3000
+      - name: Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v3
+        with:
+          urls: |
+            http://0.0.0.0:3000
+          uploadArtifacts: true
+      - name: Semantic Release Action
+        uses: codfish/semantic-release-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        with:
+          # The branch on which releases should happen. https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branch
+          branch: main
