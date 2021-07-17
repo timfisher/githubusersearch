@@ -24,4 +24,3 @@ yarn-error.log*
 
 .nyc_output
 deploy.tar
-captain-definition
