@@ -1,5 +1,5 @@
 import { Given, Then } from "cypress-cucumber-preprocessor/steps";
-import { SearchUserQuery } from "../../../src/queries";
+import { SearchUserQuery } from "../../../src/apollo/queries";
 import { anyCaseRegex } from "../common/helpers";
 
 Then(`the {} is shown`, (respositoryName: string) => {

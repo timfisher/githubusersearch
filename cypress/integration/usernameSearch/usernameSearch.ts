@@ -1,5 +1,5 @@
 import { Given, Then } from "cypress-cucumber-preprocessor/steps";
-import { SearchUserQuery } from "../../../src/queries";
+import { SearchUserQuery } from "../../../src/apollo/queries";
 
 Then(`the {} is shown as a user`, (username: string) => {
   cy.findByRole("heading", { name: username });

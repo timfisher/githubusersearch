@@ -8,7 +8,7 @@ interface RepositoryListProps {
 const RepositoryList = ({ repositories }: RepositoryListProps): JSX.Element => (
   <ul>
     {repositories?.map((repository) => (
-      <RepositoryDetails repository={repository} />
+      <RepositoryDetails key={repository?.id} repository={repository} />
     ))}
   </ul>
 );

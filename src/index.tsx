@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { ApolloProvider } from "@apollo/client";
-import { useAppApolloClient } from "./apolloClient";
+import { useAppApolloClient } from "./apollo/apolloClient";
 
 // eslint-disable-next-line react-hooks/rules-of-hooks
 const client = useAppApolloClient();

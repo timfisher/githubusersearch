@@ -3,72 +3,80 @@ import { User } from "../generated/graphql";
 import {
   SearchUserQuery,
   SearchUserVariables,
+  GET_SEARCH_INPUT_VALUE,
   SEARCH_USER_QUERY,
-} from "../queries";
+  GetSearchInputValueData,
+} from "../apollo/queries";
 
 import { useQuery } from "@apollo/client";
 
-import RepositoryList from "./RespositoryList";
+import RepositoryList from "./RepositoryList";
 import styled from "styled-components";
+import { users } from "../apollo/cache";
 
 interface UserListProps {
-  user: string;
   maxUsers: number;
   maxRepositories: number;
 }
 
 const SearchResultsContainer = ({
-  user,
   maxUsers,
   maxRepositories,
 }: UserListProps) => {
-  const { loading, error, data } = useQuery<
-    SearchUserQuery,
-    SearchUserVariables
-  >(SEARCH_USER_QUERY, {
+  const { data: user } = useQuery<GetSearchInputValueData>(
+    GET_SEARCH_INPUT_VALUE
+  );
+
+  const {
+    loading,
+    error,
+    data: searchResults,
+  } = useQuery<SearchUserQuery, SearchUserVariables>(SEARCH_USER_QUERY, {
     variables: {
-      user,
+      user: user?.searchInputValue ?? "",
       maxUsers,
       maxRepositories,
     },
   });
+  const usersData = searchResults?.search?.nodes?.filter(
+    (node) => node?.__typename === "User"
+  ) as User[];
+  users(usersData);
+
   if (loading) return <p>Loading ...</p>;
   if (error) return <p>An error has occurred fetching the data</p>;
-  if (data?.search.nodes?.length === 0) {
+  if (searchResults?.search.nodes?.length === 0) {
     return <p>No users found</p>;
   }
 
-  return <SearchResults searchResults={data} />;
+  return <SearchResults users={usersData} />;
 };
 
 interface SearchResultData {
-  searchResults: SearchUserQuery | undefined;
+  users: User[];
 }
 
-const SearchResults = ({ searchResults }: SearchResultData) => {
+const SearchResults = ({ users }: SearchResultData) => {
   return (
     <StyledSearchResults>
-      {searchResults?.search?.nodes
-        ?.filter((node) => node?.__typename === "User")
-        .map((searchResult) => (
-          <Item>
+      {users.map(
+        ({ avatarUrl, login, name, repositories: { nodes: repositories } }) => (
+          <StyledUserListItem>
             <StyledImage
-              src={(searchResult as User).avatarUrl}
-              alt={`${(searchResult as User).login} avatar`}
+              src={avatarUrl}
+              alt={`${login} avatar`}
               width="200px"
               height="200px"
             />
-            <h2>
-              {(searchResult as User).login && (searchResult as User).login}
-            </h2>
-            <h3>
-              {(searchResult as User).name && (searchResult as User).name}
-            </h3>
+            <h2>{login}</h2>
+            <h3>{name}</h3>
             <RepositoryList
-              repositories={(searchResult as User).repositories?.nodes}
+              key={`${login}repositories`}
+              repositories={repositories}
             />
-          </Item>
-        ))}
+          </StyledUserListItem>
+        )
+      )}
     </StyledSearchResults>
   );
 };
@@ -85,7 +93,7 @@ export const StyledSearchResults = styled.section`
   width: 1000px;
 `;
 
-export const Item = styled.div`
+export const StyledUserListItem = styled.div`
   grid-template-rows: auto;
   flex-direction: column;
   justify-content: center;

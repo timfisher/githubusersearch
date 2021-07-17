@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.3.21",
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -67,7 +69,8 @@
     "lint:fix": "eslint .  --ext .js,.jsx,.tsx --fix",
     "test": "react-scripts test --passWithNoTests",
     "test:e2e": "npx cypress open",
-    "test:e2e:ci": "npx cypress run",
+    "test:e2e:integration": "npx cypress run -e TAGS='not @smoke'",
+    "test:e2e:smoke": "npx cypress run -e TAGS='@smoke'",
     "eject": "react-scripts eject",
     "codegen": "graphql-codegen --config codegen.yml"
   },

@@ -1,28 +1,4 @@
 {
-  "/Users/tim.fisher/Documents/Code/githubsearch/src/queries.ts": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/queries.ts",
-    "statementMap": {
-      "0": {
-        "start": {
-          "line": 66,
-          "column": 33
-        },
-        "end": {
-          "line": 87,
-          "column": 1
-        }
-      }
-    },
-    "fnMap": {},
-    "branchMap": {},
-    "s": {
-      "0": 11
-    },
-    "f": {},
-    "b": {},
-    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "e21fe6e1155a8ffe22f62de0f6d7425c9274e3b0"
-  },
   "/Users/tim.fisher/Documents/Code/githubsearch/src/components/RepositoryDetails.tsx": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/RepositoryDetails.tsx",
     "statementMap": {
@@ -32,7 +8,7 @@
           "column": 26
         },
         "end": {
-          "line": 34,
+          "line": 45,
           "column": 1
         }
       },
@@ -42,17 +18,17 @@
           "column": 2
         },
         "end": {
-          "line": 33,
+          "line": 44,
           "column": 28
         }
       },
       "2": {
         "start": {
-          "line": 36,
+          "line": 47,
           "column": 39
         },
         "end": {
-          "line": 41,
+          "line": 53,
           "column": 1
         }
       }
@@ -76,7 +52,7 @@
             "column": 2
           },
           "end": {
-            "line": 33,
+            "line": 44,
             "column": 28
           }
         },
@@ -85,19 +61,19 @@
     },
     "branchMap": {},
     "s": {
-      "0": 11,
-      "1": 2036,
-      "2": 11
+      "0": 27,
+      "1": 4246,
+      "2": 27
     },
     "f": {
-      "0": 2036
+      "0": 4246
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "581564600747845dfc33bffe2ba5df934a872e26"
+    "hash": "b511aaa43bbc7172423ee9912c52d50a7635d774"
   },
-  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/RespositoryList.tsx": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/RespositoryList.tsx",
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/RepositoryList.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/RepositoryList.tsx",
     "statementMap": {
       "0": {
         "start": {
@@ -126,7 +102,7 @@
         },
         "end": {
           "line": 11,
-          "column": 51
+          "column": 72
         }
       }
     },
@@ -174,7 +150,7 @@
           },
           "end": {
             "line": 11,
-            "column": 51
+            "column": 72
           }
         },
         "line": 11
@@ -182,179 +158,125 @@
     },
     "branchMap": {},
     "s": {
-      "0": 11,
-      "1": 280,
-      "2": 2036
+      "0": 27,
+      "1": 704,
+      "2": 4246
     },
     "f": {
-      "0": 280,
-      "1": 2036
+      "0": 704,
+      "1": 4246
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "d6f5987ccb56dd522c6b2b8c5f404f53c7aec0d9"
+    "hash": "0b398cdc3a4ba927aca81235ecfb31b445b42732"
   },
-  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResults.tsx": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResults.tsx",
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/queries.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/queries.ts",
     "statementMap": {
       "0": {
         "start": {
-          "line": 20,
-          "column": 31
+          "line": 66,
+          "column": 33
         },
         "end": {
-          "line": 42,
+          "line": 87,
           "column": 1
         }
       },
       "1": {
         "start": {
-          "line": 25,
-          "column": 35
+          "line": 93,
+          "column": 38
         },
         "end": {
-          "line": 34,
-          "column": 4
+          "line": 97,
+          "column": 1
         }
       },
       "2": {
         "start": {
-          "line": 35,
-          "column": 2
+          "line": 103,
+          "column": 25
         },
         "end": {
-          "line": 35,
-          "column": 41
+          "line": 107,
+          "column": 1
+        }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": {
+      "0": 27,
+      "1": 27,
+      "2": 27
+    },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "7be8aa857a0ae6300b7de5dd5822cb7e6c503a8f"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/cache.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/cache.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 24
+        },
+        "end": {
+          "line": 9,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 11,
+          "column": 32
+        },
+        "end": {
+          "line": 11,
+          "column": 51
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 21
+        },
+        "end": {
+          "line": 13,
+          "column": 40
         }
       },
       "3": {
         "start": {
-          "line": 35,
-          "column": 15
+          "line": 15,
+          "column": 36
         },
         "end": {
-          "line": 35,
-          "column": 41
+          "line": 32,
+          "column": 2
         }
       },
       "4": {
         "start": {
-          "line": 36,
-          "column": 2
+          "line": 21,
+          "column": 12
         },
         "end": {
-          "line": 36,
-          "column": 67
+          "line": 21,
+          "column": 38
         }
       },
       "5": {
         "start": {
-          "line": 36,
-          "column": 13
+          "line": 26,
+          "column": 12
         },
         "end": {
-          "line": 36,
-          "column": 67
-        }
-      },
-      "6": {
-        "start": {
-          "line": 37,
-          "column": 2
-        },
-        "end": {
-          "line": 39,
-          "column": 3
-        }
-      },
-      "7": {
-        "start": {
-          "line": 38,
-          "column": 4
-        },
-        "end": {
-          "line": 38,
-          "column": 33
-        }
-      },
-      "8": {
-        "start": {
-          "line": 41,
-          "column": 2
-        },
-        "end": {
-          "line": 41,
-          "column": 48
-        }
-      },
-      "9": {
-        "start": {
-          "line": 48,
-          "column": 22
-        },
-        "end": {
-          "line": 74,
-          "column": 1
-        }
-      },
-      "10": {
-        "start": {
-          "line": 49,
-          "column": 2
-        },
-        "end": {
-          "line": 73,
-          "column": 4
-        }
-      },
-      "11": {
-        "start": {
-          "line": 52,
+          "line": 26,
           "column": 27
-        },
-        "end": {
-          "line": 52,
-          "column": 54
-        }
-      },
-      "12": {
-        "start": {
-          "line": 54,
-          "column": 10
-        },
-        "end": {
-          "line": 70,
-          "column": 17
-        }
-      },
-      "13": {
-        "start": {
-          "line": 76,
-          "column": 27
-        },
-        "end": {
-          "line": 78,
-          "column": 1
-        }
-      },
-      "14": {
-        "start": {
-          "line": 80,
-          "column": 35
-        },
-        "end": {
-          "line": 86,
-          "column": 1
-        }
-      },
-      "15": {
-        "start": {
-          "line": 88,
-          "column": 20
-        },
-        "end": {
-          "line": 93,
-          "column": 1
         }
       }
     },
@@ -364,107 +286,732 @@
         "decl": {
           "start": {
             "line": 20,
-            "column": 31
+            "column": 10
           },
           "end": {
             "line": 20,
-            "column": 32
+            "column": 11
           }
         },
         "loc": {
           "start": {
-            "line": 24,
-            "column": 21
+            "line": 20,
+            "column": 17
           },
           "end": {
-            "line": 42,
-            "column": 1
+            "line": 22,
+            "column": 11
           }
         },
-        "line": 24
+        "line": 20
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
           "start": {
-            "line": 48,
-            "column": 22
+            "line": 25,
+            "column": 10
           },
           "end": {
-            "line": 48,
-            "column": 23
+            "line": 25,
+            "column": 11
           }
         },
         "loc": {
           "start": {
-            "line": 48,
+            "line": 25,
+            "column": 17
+          },
+          "end": {
+            "line": 27,
+            "column": 11
+          }
+        },
+        "line": 25
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 27,
+      "1": 27,
+      "2": 27,
+      "3": 27,
+      "4": 265,
+      "5": 149
+    },
+    "f": {
+      "0": 265,
+      "1": 149
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "b3f5dcd42efa5a5d8f56d13e064e068ec6fccedb"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchUserInput.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchUserInput.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 8,
+          "column": 26
+        },
+        "end": {
+          "line": 10,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 9,
+          "column": 2
+        },
+        "end": {
+          "line": 9,
+          "column": 32
+        }
+      },
+      "2": {
+        "start": {
+          "line": 12,
+          "column": 24
+        },
+        "end": {
+          "line": 36,
+          "column": 1
+        }
+      },
+      "3": {
+        "start": {
+          "line": 13,
+          "column": 19
+        },
+        "end": {
+          "line": 13,
+          "column": 52
+        }
+      },
+      "4": {
+        "start": {
+          "line": 15,
+          "column": 19
+        },
+        "end": {
+          "line": 15,
+          "column": 65
+        }
+      },
+      "5": {
+        "start": {
+          "line": 15,
+          "column": 45
+        },
+        "end": {
+          "line": 15,
+          "column": 56
+        }
+      },
+      "6": {
+        "start": {
+          "line": 17,
+          "column": 2
+        },
+        "end": {
+          "line": 35,
+          "column": 4
+        }
+      },
+      "7": {
+        "start": {
+          "line": 22,
+          "column": 37
+        },
+        "end": {
+          "line": 22,
+          "column": 68
+        }
+      },
+      "8": {
+        "start": {
+          "line": 23,
+          "column": 40
+        },
+        "end": {
+          "line": 23,
+          "column": 69
+        }
+      },
+      "9": {
+        "start": {
+          "line": 26,
+          "column": 8
+        },
+        "end": {
+          "line": 32,
+          "column": 10
+        }
+      },
+      "10": {
+        "start": {
+          "line": 38,
+          "column": 31
+        },
+        "end": {
+          "line": 40,
+          "column": 1
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 8,
+            "column": 26
+          },
+          "end": {
+            "line": 8,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 8,
             "column": 63
           },
           "end": {
-            "line": 74,
+            "line": 10,
             "column": 1
           }
         },
-        "line": 48
+        "line": 8
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 24
+          },
+          "end": {
+            "line": 12,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 30
+          },
+          "end": {
+            "line": 36,
+            "column": 1
+          }
+        },
+        "line": 12
       },
       "2": {
         "name": "(anonymous_2)",
         "decl": {
           "start": {
-            "line": 52,
-            "column": 17
+            "line": 15,
+            "column": 35
           },
           "end": {
-            "line": 52,
-            "column": 18
+            "line": 15,
+            "column": 36
           }
         },
         "loc": {
           "start": {
-            "line": 52,
-            "column": 27
+            "line": 15,
+            "column": 45
           },
           "end": {
-            "line": 52,
-            "column": 54
+            "line": 15,
+            "column": 56
           }
         },
-        "line": 52
+        "line": 15
       },
       "3": {
         "name": "(anonymous_3)",
         "decl": {
           "start": {
-            "line": 53,
-            "column": 13
+            "line": 22,
+            "column": 16
           },
           "end": {
-            "line": 53,
-            "column": 14
+            "line": 22,
+            "column": 17
           }
         },
         "loc": {
           "start": {
-            "line": 54,
-            "column": 10
+            "line": 22,
+            "column": 37
           },
           "end": {
-            "line": 70,
-            "column": 17
+            "line": 22,
+            "column": 68
           }
         },
-        "line": 54
+        "line": 22
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 23,
+            "column": 21
+          },
+          "end": {
+            "line": 23,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 40
+          },
+          "end": {
+            "line": 23,
+            "column": 69
+          }
+        },
+        "line": 23
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 25,
+            "column": 19
+          },
+          "end": {
+            "line": 25,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 8
+          },
+          "end": {
+            "line": 32,
+            "column": 10
+          }
+        },
+        "line": 26
       }
     },
     "branchMap": {
       "0": {
         "loc": {
           "start": {
-            "line": 35,
+            "line": 15,
+            "column": 19
+          },
+          "end": {
+            "line": 15,
+            "column": 65
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 15,
+              "column": 19
+            },
+            "end": {
+              "line": 15,
+              "column": 57
+            }
+          },
+          {
+            "start": {
+              "line": 15,
+              "column": 61
+            },
+            "end": {
+              "line": 15,
+              "column": 65
+            }
+          }
+        ],
+        "line": 15
+      }
+    },
+    "s": {
+      "0": 27,
+      "1": 211,
+      "2": 27,
+      "3": 258,
+      "4": 258,
+      "5": 704,
+      "6": 258,
+      "7": 0,
+      "8": 211,
+      "9": 746,
+      "10": 27
+    },
+    "f": {
+      "0": 211,
+      "1": 258,
+      "2": 704,
+      "3": 0,
+      "4": 211,
+      "5": 746
+    },
+    "b": {
+      "0": [
+        258,
+        100
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "3218e132e880b52a68671da2682926fb7b8da04a"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResults.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResults.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 22,
+          "column": 31
+        },
+        "end": {
+          "line": 53,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 26,
+          "column": 25
+        },
+        "end": {
+          "line": 28,
+          "column": 3
+        }
+      },
+      "2": {
+        "start": {
+          "line": 34,
+          "column": 6
+        },
+        "end": {
+          "line": 40,
+          "column": 4
+        }
+      },
+      "3": {
+        "start": {
+          "line": 41,
+          "column": 20
+        },
+        "end": {
+          "line": 43,
+          "column": 13
+        }
+      },
+      "4": {
+        "start": {
+          "line": 42,
+          "column": 14
+        },
+        "end": {
+          "line": 42,
+          "column": 41
+        }
+      },
+      "5": {
+        "start": {
+          "line": 44,
+          "column": 2
+        },
+        "end": {
+          "line": 44,
+          "column": 19
+        }
+      },
+      "6": {
+        "start": {
+          "line": 46,
+          "column": 2
+        },
+        "end": {
+          "line": 46,
+          "column": 41
+        }
+      },
+      "7": {
+        "start": {
+          "line": 46,
+          "column": 15
+        },
+        "end": {
+          "line": 46,
+          "column": 41
+        }
+      },
+      "8": {
+        "start": {
+          "line": 47,
+          "column": 2
+        },
+        "end": {
+          "line": 47,
+          "column": 67
+        }
+      },
+      "9": {
+        "start": {
+          "line": 47,
+          "column": 13
+        },
+        "end": {
+          "line": 47,
+          "column": 67
+        }
+      },
+      "10": {
+        "start": {
+          "line": 48,
+          "column": 2
+        },
+        "end": {
+          "line": 50,
+          "column": 3
+        }
+      },
+      "11": {
+        "start": {
+          "line": 49,
+          "column": 4
+        },
+        "end": {
+          "line": 49,
+          "column": 33
+        }
+      },
+      "12": {
+        "start": {
+          "line": 52,
+          "column": 2
+        },
+        "end": {
+          "line": 52,
+          "column": 45
+        }
+      },
+      "13": {
+        "start": {
+          "line": 59,
+          "column": 22
+        },
+        "end": {
+          "line": 82,
+          "column": 1
+        }
+      },
+      "14": {
+        "start": {
+          "line": 60,
+          "column": 2
+        },
+        "end": {
+          "line": 81,
+          "column": 4
+        }
+      },
+      "15": {
+        "start": {
+          "line": 64,
+          "column": 10
+        },
+        "end": {
+          "line": 77,
+          "column": 31
+        }
+      },
+      "16": {
+        "start": {
+          "line": 84,
+          "column": 27
+        },
+        "end": {
+          "line": 86,
+          "column": 1
+        }
+      },
+      "17": {
+        "start": {
+          "line": 88,
+          "column": 35
+        },
+        "end": {
+          "line": 94,
+          "column": 1
+        }
+      },
+      "18": {
+        "start": {
+          "line": 96,
+          "column": 34
+        },
+        "end": {
+          "line": 101,
+          "column": 1
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 22,
+            "column": 31
+          },
+          "end": {
+            "line": 22,
+            "column": 32
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 21
+          },
+          "end": {
+            "line": 53,
+            "column": 1
+          }
+        },
+        "line": 25
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 42,
+            "column": 4
+          },
+          "end": {
+            "line": 42,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 42,
+            "column": 14
+          },
+          "end": {
+            "line": 42,
+            "column": 41
+          }
+        },
+        "line": 42
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 59,
+            "column": 22
+          },
+          "end": {
+            "line": 59,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 59,
+            "column": 55
+          },
+          "end": {
+            "line": 82,
+            "column": 1
+          }
+        },
+        "line": 59
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 63,
+            "column": 8
+          },
+          "end": {
+            "line": 63,
+            "column": 9
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 64,
+            "column": 10
+          },
+          "end": {
+            "line": 77,
+            "column": 31
+          }
+        },
+        "line": 64
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 36,
+            "column": 12
+          },
+          "end": {
+            "line": 36,
+            "column": 40
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 36,
+              "column": 12
+            },
+            "end": {
+              "line": 36,
+              "column": 34
+            }
+          },
+          {
+            "start": {
+              "line": 36,
+              "column": 38
+            },
+            "end": {
+              "line": 36,
+              "column": 40
+            }
+          }
+        ],
+        "line": 36
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 46,
             "column": 2
           },
           "end": {
-            "line": 35,
+            "line": 46,
             "column": 41
           }
         },
@@ -472,35 +1019,35 @@
         "locations": [
           {
             "start": {
-              "line": 35,
+              "line": 46,
               "column": 2
             },
             "end": {
-              "line": 35,
+              "line": 46,
               "column": 41
             }
           },
           {
             "start": {
-              "line": 35,
+              "line": 46,
               "column": 2
             },
             "end": {
-              "line": 35,
+              "line": 46,
               "column": 41
             }
           }
         ],
-        "line": 35
+        "line": 46
       },
-      "1": {
+      "2": {
         "loc": {
           "start": {
-            "line": 36,
+            "line": 47,
             "column": 2
           },
           "end": {
-            "line": 36,
+            "line": 47,
             "column": 67
           }
         },
@@ -508,35 +1055,35 @@
         "locations": [
           {
             "start": {
-              "line": 36,
+              "line": 47,
               "column": 2
             },
             "end": {
-              "line": 36,
+              "line": 47,
               "column": 67
             }
           },
           {
             "start": {
-              "line": 36,
+              "line": 47,
               "column": 2
             },
             "end": {
-              "line": 36,
+              "line": 47,
               "column": 67
             }
           }
         ],
-        "line": 36
+        "line": 47
       },
-      "2": {
+      "3": {
         "loc": {
           "start": {
-            "line": 37,
+            "line": 48,
             "column": 2
           },
           "end": {
-            "line": 39,
+            "line": 50,
             "column": 3
           }
         },
@@ -544,148 +1091,86 @@
         "locations": [
           {
             "start": {
-              "line": 37,
+              "line": 48,
               "column": 2
             },
             "end": {
-              "line": 39,
+              "line": 50,
               "column": 3
             }
           },
           {
             "start": {
-              "line": 37,
+              "line": 48,
               "column": 2
             },
             "end": {
-              "line": 39,
+              "line": 50,
               "column": 3
             }
           }
         ],
-        "line": 37
-      },
-      "3": {
-        "loc": {
-          "start": {
-            "line": 62,
-            "column": 15
-          },
-          "end": {
-            "line": 62,
-            "column": 75
-          }
-        },
-        "type": "binary-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 62,
-              "column": 15
-            },
-            "end": {
-              "line": 62,
-              "column": 43
-            }
-          },
-          {
-            "start": {
-              "line": 62,
-              "column": 47
-            },
-            "end": {
-              "line": 62,
-              "column": 75
-            }
-          }
-        ],
-        "line": 62
-      },
-      "4": {
-        "loc": {
-          "start": {
-            "line": 65,
-            "column": 15
-          },
-          "end": {
-            "line": 65,
-            "column": 73
-          }
-        },
-        "type": "binary-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 65,
-              "column": 15
-            },
-            "end": {
-              "line": 65,
-              "column": 42
-            }
-          },
-          {
-            "start": {
-              "line": 65,
-              "column": 46
-            },
-            "end": {
-              "line": 65,
-              "column": 73
-            }
-          }
-        ],
-        "line": 65
+        "line": 48
       }
     },
     "s": {
-      "0": 11,
-      "1": 226,
-      "2": 226,
-      "3": 206,
-      "4": 20,
-      "5": 4,
-      "6": 16,
-      "7": 4,
-      "8": 12,
-      "9": 11,
-      "10": 12,
-      "11": 280,
-      "12": 280,
-      "13": 11,
-      "14": 11,
-      "15": 11
+      "0": 27,
+      "1": 992,
+      "2": 992,
+      "3": 992,
+      "4": 932,
+      "5": 992,
+      "6": 992,
+      "7": 922,
+      "8": 70,
+      "9": 4,
+      "10": 66,
+      "11": 16,
+      "12": 50,
+      "13": 27,
+      "14": 42,
+      "15": 704,
+      "16": 27,
+      "17": 27,
+      "18": 27
     },
     "f": {
-      "0": 226,
-      "1": 12,
-      "2": 280,
-      "3": 280
+      "0": 992,
+      "1": 932,
+      "2": 42,
+      "3": 704
     },
     "b": {
       "0": [
-        206,
-        20
+        992,
+        0
       ],
       "1": [
-        4,
-        16
+        922,
+        70
       ],
       "2": [
         4,
-        12
+        66
       ],
       "3": [
-        280,
-        280
-      ],
-      "4": [
-        280,
-        200
+        16,
+        50
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "66f45f45376d95c4df7ee880dc94b7f8d3d4dab9"
+    "hash": "522b1f89d5928c276a11f5847aa14ffa8ca578bd"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/index.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a667df5fa936bb516303d266e983871ce31abd60"
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/src/App.tsx": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/App.tsx",
@@ -716,229 +1201,125 @@
           "column": 2
         },
         "end": {
-          "line": 12,
-          "column": 3
+          "line": 14,
+          "column": 4
         }
       },
       "3": {
         "start": {
-          "line": 10,
-          "column": 2
-        },
-        "end": {
-          "line": 12,
-          "column": 3
-        }
-      },
-      "4": {
-        "start": {
-          "line": 11,
-          "column": 4
-        },
-        "end": {
-          "line": 11,
-          "column": 39
-        }
-      },
-      "5": {
-        "start": {
-          "line": 15,
-          "column": 34
-        },
-        "end": {
-          "line": 15,
-          "column": 54
-        }
-      },
-      "6": {
-        "start": {
-          "line": 16,
-          "column": 2
-        },
-        "end": {
-          "line": 31,
-          "column": 4
-        }
-      },
-      "7": {
-        "start": {
-          "line": 34,
+          "line": 17,
           "column": 21
         },
         "end": {
-          "line": 38,
+          "line": 21,
           "column": 1
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": {
-            "line": 9,
-            "column": 2
-          },
-          "end": {
-            "line": 9,
-            "column": 3
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 10,
-            "column": 2
-          },
-          "end": {
-            "line": 12,
-            "column": 3
-          }
-        },
-        "line": 10
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": {
-            "line": 10,
-            "column": 2
-          },
-          "end": {
-            "line": 10,
-            "column": 3
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 10,
-            "column": 44
-          },
-          "end": {
-            "line": 12,
-            "column": 3
-          }
-        },
-        "line": 10
-      },
-      "2": {
         "name": "App",
         "decl": {
           "start": {
-            "line": 14,
+            "line": 8,
             "column": 9
           },
           "end": {
-            "line": 14,
+            "line": 8,
             "column": 12
           }
         },
         "loc": {
           "start": {
-            "line": 14,
+            "line": 8,
             "column": 15
           },
           "end": {
-            "line": 32,
+            "line": 15,
             "column": 1
           }
         },
-        "line": 14
+        "line": 8
       }
     },
     "branchMap": {},
     "s": {
-      "0": 11,
-      "1": 11,
-      "2": 11,
-      "3": 188,
-      "4": 83,
-      "5": 194,
-      "6": 188,
-      "7": 11
+      "0": 27,
+      "1": 27,
+      "2": 75,
+      "3": 27
     },
     "f": {
-      "0": 188,
-      "1": 83,
-      "2": 194
+      "0": 75
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "1ad68a18a8db106e3350971d839a85e67feedbae"
+    "hash": "b5318173a8e323a2131a7b64a4d2d4121d783e93"
   },
-  "/Users/tim.fisher/Documents/Code/githubsearch/src/apolloClient.ts": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/apolloClient.ts",
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/apolloClient.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/apolloClient.ts",
     "statementMap": {
       "0": {
         "start": {
-          "line": 8,
+          "line": 10,
           "column": 17
         },
         "end": {
-          "line": 8,
+          "line": 10,
           "column": 72
         }
       },
       "1": {
         "start": {
-          "line": 10,
+          "line": 12,
           "column": 23
         },
         "end": {
-          "line": 19,
+          "line": 21,
           "column": 4
         }
       },
       "2": {
         "start": {
-          "line": 11,
+          "line": 13,
           "column": 2
         },
         "end": {
-          "line": 19,
+          "line": 21,
           "column": 4
         }
       },
       "3": {
         "start": {
-          "line": 12,
+          "line": 14,
           "column": 4
         },
         "end": {
-          "line": 16,
+          "line": 18,
           "column": 7
         }
       },
       "4": {
         "start": {
-          "line": 18,
+          "line": 20,
           "column": 4
         },
         "end": {
-          "line": 18,
+          "line": 20,
           "column": 30
         }
       },
       "5": {
         "start": {
-          "line": 21,
-          "column": 14
-        },
-        "end": {
-          "line": 21,
-          "column": 35
-        }
-      },
-      "6": {
-        "start": {
           "line": 23,
           "column": 34
         },
         "end": {
-          "line": 29,
+          "line": 30,
           "column": 1
         }
       },
-      "7": {
+      "6": {
         "start": {
           "line": 24,
           "column": 20
@@ -948,13 +1329,13 @@
           "column": 62
         }
       },
-      "8": {
+      "7": {
         "start": {
           "line": 25,
           "column": 2
         },
         "end": {
-          "line": 28,
+          "line": 29,
           "column": 5
         }
       }
@@ -964,49 +1345,49 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 10,
+            "line": 12,
             "column": 23
           },
           "end": {
-            "line": 10,
+            "line": 12,
             "column": 24
           }
         },
         "loc": {
           "start": {
-            "line": 11,
+            "line": 13,
             "column": 2
           },
           "end": {
-            "line": 19,
+            "line": 21,
             "column": 4
           }
         },
-        "line": 11
+        "line": 13
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
           "start": {
-            "line": 11,
+            "line": 13,
             "column": 17
           },
           "end": {
-            "line": 11,
+            "line": 13,
             "column": 18
           }
         },
         "loc": {
           "start": {
-            "line": 11,
+            "line": 13,
             "column": 41
           },
           "end": {
-            "line": 19,
+            "line": 21,
             "column": 3
           }
         },
-        "line": 11
+        "line": 13
       },
       "2": {
         "name": "(anonymous_2)",
@@ -1026,7 +1407,7 @@
             "column": 40
           },
           "end": {
-            "line": 29,
+            "line": 30,
             "column": 1
           }
         },
@@ -1035,24 +1416,23 @@
     },
     "branchMap": {},
     "s": {
-      "0": 11,
-      "1": 11,
-      "2": 11,
-      "3": 94,
-      "4": 94,
-      "5": 11,
-      "6": 11,
-      "7": 11,
-      "8": 11
+      "0": 27,
+      "1": 27,
+      "2": 27,
+      "3": 238,
+      "4": 238,
+      "5": 27,
+      "6": 27,
+      "7": 27
     },
     "f": {
-      "0": 11,
-      "1": 94,
-      "2": 11
+      "0": 27,
+      "1": 238,
+      "2": 27
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "352a0aa183c89e76e2e09cbbaf7617b29990f1ee"
+    "hash": "8fb4faa9d8911a2606fa93460007f68b1a665092"
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/src/index.tsx": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/index.tsx",
@@ -1081,8 +1461,8 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 11,
-      "1": 11
+      "0": 27,
+      "1": 27
     },
     "f": {},
     "b": {},
@@ -1109,6 +1489,33 @@
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/sorter.js": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/sorter.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/2.20be4e5e.chunk.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/2.20be4e5e.chunk.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/main.cdea2cb0.chunk.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/main.cdea2cb0.chunk.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/runtime-main.c002da70.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/runtime-main.c002da70.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -1217,15 +1624,6 @@
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/usernameSearch/usernameSearch.ts": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/usernameSearch/usernameSearch.ts",
-    "statementMap": {},
-    "fnMap": {},
-    "branchMap": {},
-    "s": {},
-    "f": {},
-    "b": {}
-  },
-  "/Users/tim.fisher/Documents/Code/githubsearch/src/App.test.tsx": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/App.test.tsx",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
