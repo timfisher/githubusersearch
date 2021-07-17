@@ -13,6 +13,7 @@ import { useQuery } from "@apollo/client";
 import RepositoryList from "./RepositoryList";
 import styled from "styled-components";
 import { users } from "../apollo/cache";
+import { LoadingAnimation } from ".";
 
 interface UserListProps {
   maxUsers: number;
@@ -43,7 +44,13 @@ const SearchResultsContainer = ({
   ) as User[];
   users(usersData);
 
-  if (loading) return <p>Loading ...</p>;
+  if (loading)
+    return (
+      <>
+        <LoadingAnimation />
+        <p>Finding Users...</p>
+      </>
+    );
   if (error) return <p>An error has occurred fetching the data</p>;
   if (searchResults?.search.nodes?.length === 0) {
     return <p>No users found</p>;
