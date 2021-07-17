@@ -67,6 +67,7 @@
     "lint:fix": "eslint .  --ext .js,.jsx,.tsx --fix",
     "test": "react-scripts test --passWithNoTests",
     "test:e2e": "npx cypress open",
+    "test:e2e:ci": "npx cypress run",
     "eject": "react-scripts eject",
     "codegen": "graphql-codegen --config codegen.yml"
   },
