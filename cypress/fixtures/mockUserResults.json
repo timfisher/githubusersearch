@@ -1,0 +1,69 @@
+{
+  "data": {
+    "search": {
+      "nodes": [
+        {
+          "repositories": {
+            "nodes": [
+              {
+                "name": "topQualityRepository",
+                "stargazerCount": 9999,
+                "watchers": {
+                  "totalCount": 9999,
+                  "__typename": "UserConnection"
+                },
+                "__typename": "Repository"
+              },
+              {
+                "name": "topQualityRepository2",
+                "stargazerCount": 9999,
+                "watchers": {
+                  "totalCount": 9999,
+                  "__typename": "UserConnection"
+                },
+                "__typename": "Repository"
+              }
+            ],
+            "__typename": "RepositoryConnection"
+          },
+          "avatarUrl": "https://avatars.githubusercontent.com/u/3307959?u=a1a3bc09cf9926cf2928257455f2c87f084a8788&v=4",
+          "login": "timfisher",
+          "name": "Timothy Fisher",
+          "__typename": "User"
+        },
+        {
+          "repositories": {
+            "nodes": [
+              {
+                "name": "hello-world",
+                "stargazerCount": 0,
+                "watchers": { "totalCount": 0, "__typename": "UserConnection" },
+                "__typename": "Repository"
+              }
+            ],
+            "__typename": "RepositoryConnection"
+          },
+          "avatarUrl": "https://avatars.githubusercontent.com/u/24650504?v=4",
+          "login": "TimFisherUK",
+          "name": null,
+          "__typename": "User"
+        },
+        {
+          "repositories": { "nodes": [], "__typename": "RepositoryConnection" },
+          "avatarUrl": "https://avatars.githubusercontent.com/u/11544765?v=4",
+          "login": "timfisher64",
+          "name": null,
+          "__typename": "User"
+        },
+        {
+          "repositories": { "nodes": [], "__typename": "RepositoryConnection" },
+          "avatarUrl": "https://avatars.githubusercontent.com/u/50407247?v=4",
+          "login": "timfisherzerto",
+          "name": null,
+          "__typename": "User"
+        }
+      ],
+      "__typename": "SearchResultItemConnection"
+    }
+  }
+}
