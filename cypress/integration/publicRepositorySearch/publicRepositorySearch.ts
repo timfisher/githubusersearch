@@ -11,7 +11,7 @@ Then(
   `the {} has {int} stars`,
   (respositoryName: string, numberOfStars: number) => {
     const starsAriaLabel = `${numberOfStars} users starred this repository`;
-    cy.findByRole("button", { name: starsAriaLabel });
+    cy.findByRole("link", { name: starsAriaLabel });
   }
 );
 
@@ -19,7 +19,7 @@ Then(
   `the {} has {int} watchers`,
   (respositoryName: string, numberOfWatchers: number) => {
     const watchersAriaLabel = `${numberOfWatchers} users watched this repository`;
-    cy.findByRole("button", { name: watchersAriaLabel });
+    cy.findByRole("link", { name: watchersAriaLabel });
   }
 );
 
