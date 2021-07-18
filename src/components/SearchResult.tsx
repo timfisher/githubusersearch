@@ -5,6 +5,7 @@ import { Maybe } from "graphql/jsutils/Maybe";
 import { Repository } from "../generated/graphql";
 import {
   Card,
+  CardActionArea,
   CardActions,
   CardContent,
   CardHeader,
@@ -65,13 +66,15 @@ const SearchResult = ({
   return (
     <Grid item xs={12} sm={4}>
       <Card className={classes.root}>
-        <CardHeader title={login} subheader={name ?? login} />
-        <CardMedia
-          className={classes.media}
-          image={avatarUrl}
-          title={`${login} avatar`}
-          style={{ backgroundSize: "contain" }}
-        />
+        <CardActionArea href={`https://github.com/${login}`}>
+          <CardHeader title={login} subheader={name ?? login} />
+          <CardMedia
+            className={classes.media}
+            image={avatarUrl}
+            title={`${login} avatar`}
+            style={{ backgroundSize: "contain" }}
+          />
+        </CardActionArea>
         <CardActions disableSpacing>
           <CardContent onClick={handleExpandClick}>
             <Typography align="right" variant="body1" color="textPrimary">

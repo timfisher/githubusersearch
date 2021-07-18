@@ -1,26 +1,23 @@
 import { User } from "../generated/graphql";
 
 import {
+  SEARCH_USER_QUERY,
   SearchUserQuery,
   SearchUserVariables,
-  GET_SEARCH_INPUT_VALUE,
-  SEARCH_USER_QUERY,
-  GetSearchInputValueData,
 } from "../apollo/queries";
 
-import { useQuery } from "@apollo/client";
+import { useQuery, useReactiveVar } from "@apollo/client";
 
-import { users } from "../apollo/cache";
+import { searchInputValue, users } from "../apollo/cache";
 import { LoadingAnimation, SearchResult } from ".";
 import { Grid } from "@material-ui/core";
+import { useEffect } from "react";
 
 const SearchResultsContainer = ({
   maxUsers,
   maxRepositories,
 }: Pick<SearchUserVariables, "maxUsers" | "maxRepositories">) => {
-  const { data: user } = useQuery<GetSearchInputValueData>(
-    GET_SEARCH_INPUT_VALUE
-  );
+  const user = useReactiveVar(searchInputValue);
 
   const {
     loading,
@@ -28,7 +25,7 @@ const SearchResultsContainer = ({
     data: searchResults,
   } = useQuery<SearchUserQuery, SearchUserVariables>(SEARCH_USER_QUERY, {
     variables: {
-      user: user?.searchInputValue ?? "",
+      user,
       maxUsers,
       maxRepositories,
     },
@@ -36,7 +33,9 @@ const SearchResultsContainer = ({
   const usersData = searchResults?.search?.nodes?.filter(
     (node) => node?.__typename === "User"
   ) as User[];
-  users(usersData);
+  useEffect(() => {
+    users(usersData);
+  }, [usersData]);
 
   if (loading) return <LoadingAnimation />;
   if (error) return <p>An error has occurred fetching the data</p>;

@@ -1,12 +1,18 @@
-import { makeVar, gql, InMemoryCache } from "@apollo/client";
-import { User } from "../generated/graphql";
+import { makeVar, InMemoryCache, DocumentNode, gql } from "@apollo/client";
+import { typeDefs, User } from "../generated/graphql";
+import { mergeTypeDefs } from "@graphql-tools/merge";
 
-export const typeDefs = gql`
-  extend type Query {
+const clientTypeDefs = gql`
+  extend type LocalStateQuery {
     searchInputValue: String!
-    users: [String!]!
+    users: [User!]!
   }
 `;
+
+export const extendedTypeDefs: DocumentNode = mergeTypeDefs([
+  typeDefs,
+  clientTypeDefs,
+]);
 
 export const searchInputValue = makeVar<string>("");
 

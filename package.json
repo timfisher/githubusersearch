@@ -32,6 +32,8 @@
     "@graphql-codegen/typescript": "1.23.0",
     "@graphql-codegen/typescript-operations": "1.18.4",
     "@graphql-codegen/typescript-react-apollo": "2.3.1",
+    "@graphql-codegen/typescript-resolvers": "^1.20.0",
+    "@graphql-tools/merge": "^6.2.14",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@testing-library/cypress": "^7.0.6",
     "@testing-library/jest-dom": "^5.11.4",

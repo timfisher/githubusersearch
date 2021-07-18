@@ -86,23 +86,3 @@ export const SEARCH_USER_QUERY = gql`
     }
   }
 `;
-
-export interface GetSearchInputValueData {
-  searchInputValue: string;
-}
-
-export const GET_SEARCH_INPUT_VALUE = gql`
-  query SearchInputValue {
-    searchInputValue @client
-  }
-`;
-
-export interface GetUsersData {
-  users: User[];
-}
-
-export const GET_USERS = gql`
-  query GetUsers {
-    users @client
-  }
-`;

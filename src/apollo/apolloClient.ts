@@ -5,7 +5,7 @@ import {
   NormalizedCacheObject,
 } from "@apollo/client";
 
-import { cache, typeDefs } from "./cache";
+import { cache, extendedTypeDefs } from "./cache";
 
 const httpLink = new HttpLink({ uri: "https://api.github.com/graphql" });
 
@@ -25,6 +25,7 @@ export const useAppApolloClient = () => {
   return new ApolloClient<NormalizedCacheObject>({
     link: authMiddleware(authToken).concat(httpLink),
     cache,
-    typeDefs,
+    typeDefs: extendedTypeDefs,
+    connectToDevTools: true,
   });
 };

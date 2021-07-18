@@ -1,8 +1,7 @@
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import { useQuery } from "@apollo/client";
-import { GetUsersData, GET_USERS } from "../apollo/queries";
-import { searchInputValue } from "../apollo/cache";
+import { useReactiveVar } from "@apollo/client";
+import { searchInputValue, users } from "../apollo/cache";
 import styled from "styled-components";
 
 const handleInputChange = (optionValue: string | undefined) => {
@@ -10,9 +9,9 @@ const handleInputChange = (optionValue: string | undefined) => {
 };
 
 const SearchUserInput = () => {
-  const { data } = useQuery<GetUsersData>(GET_USERS);
+  const usersData = useReactiveVar(users);
 
-  const userData = data?.users.map((user) => user?.login) ?? [""];
+  const userData = usersData?.map((user) => user?.login) ?? [""];
 
   return (
     <Autocomplete
