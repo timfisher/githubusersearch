@@ -21,7 +21,7 @@ const authMiddleware = (authToken: string) =>
   });
 
 export const useAppApolloClient = () => {
-  const authToken = "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";
+  const authToken = process.env.REACT_APP_GITHUB_AUTHTOKEN ?? "";
   return new ApolloClient<NormalizedCacheObject>({
     link: authMiddleware(authToken).concat(httpLink),
     cache,

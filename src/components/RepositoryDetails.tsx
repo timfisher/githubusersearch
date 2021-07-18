@@ -1,55 +1,111 @@
-import styled from "styled-components";
-import { Maybe, Repository } from "../generated/graphql";
+import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import { Repository } from "../generated/graphql";
+import VisibilityIcon from "@material-ui/icons/Visibility";
 
-interface RepositoryDetailsProps {
-  repository: Maybe<Repository>;
-}
+import React from "react";
+import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
+
+import Collapse from "@material-ui/core/Collapse";
+
+import ExpandLess from "@material-ui/icons/ExpandLess";
+import ExpandMore from "@material-ui/icons/ExpandMore";
+import StarBorder from "@material-ui/icons/StarBorder";
+import LinkIcon from "@material-ui/icons/Link";
 
 const RepositoryDetails = ({
-  repository,
-}: RepositoryDetailsProps): JSX.Element => (
-  <StyledRepositoryDetails
-    aria-label={`${repository?.name} repository`}
-    key={`${repository?.name} repository`}
-  >
-    Name:
-    {repository?.name}
-    <br />
-    <span
-      aria-label={`${repository?.stargazerCount} users starred this repository`}
-    >
-      <svg
-        aria-hidden="true"
-        viewBox="0 0 16 16"
-        version="1.1"
-        data-view-component="true"
-        height="16"
-        width="16"
-        className="octicon octicon-star mr-1"
-      >
-        <path
-          fillRule="evenodd"
-          d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"
-        ></path>
-      </svg>
-      {repository?.stargazerCount}
-    </span>
-    <br />
-    Watchers:
-    <span
-      aria-label={`${repository?.stargazerCount} users watched this repository`}
-    >
-      {repository?.watchers?.totalCount}
-    </span>
-  </StyledRepositoryDetails>
+  name,
+  stargazerCount,
+  url,
+  watchers,
+}: Pick<
+  Repository,
+  "name" | "stargazerCount" | "watchers" | "url"
+>): JSX.Element => {
+  return (
+    <NestedList
+      name={name}
+      stargazerCount={stargazerCount}
+      watchers={watchers}
+      url={url}
+    />
+  );
+};
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      width: "100%",
+      maxWidth: 360,
+      backgroundColor: theme.palette.background.paper,
+    },
+    nested: {
+      paddingLeft: theme.spacing(4),
+    },
+  })
 );
 
-export const StyledRepositoryDetails = styled.li`
-  grid-template-rows: auto;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5rem;
-  list-style: none;
-`;
+const ListItemLink = (props: any) => {
+  return <ListItem button component="a" {...props} />;
+};
+
+const NestedList = ({
+  name,
+  stargazerCount,
+  watchers,
+  url,
+}: Pick<Repository, "name" | "stargazerCount" | "watchers" | "url">) => {
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(true);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <>
+      <ListItem button onClick={handleClick}>
+        <ListItemIcon>
+          <GitHubIcon />
+        </ListItemIcon>
+        <ListItemText primary={name} />
+        {open ? <ExpandLess /> : <ExpandMore />}
+      </ListItem>
+      <Collapse in={open} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          <ListItem button className={classes.nested}>
+            <ListItemIcon>
+              <StarBorder />
+            </ListItemIcon>
+            <ListItemText
+              aria-label={`${stargazerCount} users starred this repository`}
+              primary={`${stargazerCount} Star${stargazerCount > 1 ? "s" : ""}`}
+            />
+          </ListItem>
+          <ListItem button className={classes.nested}>
+            <ListItemIcon>
+              <VisibilityIcon />
+            </ListItemIcon>
+            <ListItemText
+              aria-label={`${watchers.totalCount} users watched this repository`}
+              primary={`${watchers.totalCount} Watcher${
+                watchers.totalCount > 1 ? "s" : ""
+              }`}
+            />
+          </ListItem>
+          <ListItemLink href={url} button className={classes.nested}>
+            <ListItemIcon>
+              <LinkIcon />
+            </ListItemIcon>
+            <ListItemText
+              aria-label={`View ${name} on Github`}
+              primary={`View on Github`}
+            />
+          </ListItemLink>
+        </List>
+      </Collapse>
+    </>
+  );
+};
 
 export default RepositoryDetails;

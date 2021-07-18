@@ -35,8 +35,6 @@ const SearchUserInput = () => {
   );
 };
 
-export const StyledTextField = styled(TextField)`
-  min-width: 400px !important;
-`;
+export const StyledTextField = styled(TextField)``;
 
 export default SearchUserInput;

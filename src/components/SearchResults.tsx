@@ -10,20 +10,14 @@ import {
 
 import { useQuery } from "@apollo/client";
 
-import RepositoryList from "./RepositoryList";
-import styled from "styled-components";
 import { users } from "../apollo/cache";
-import { LoadingAnimation } from ".";
-
-interface UserListProps {
-  maxUsers: number;
-  maxRepositories: number;
-}
+import { LoadingAnimation, SearchResult } from ".";
+import { Grid } from "@material-ui/core";
 
 const SearchResultsContainer = ({
   maxUsers,
   maxRepositories,
-}: UserListProps) => {
+}: Pick<SearchUserVariables, "maxUsers" | "maxRepositories">) => {
   const { data: user } = useQuery<GetSearchInputValueData>(
     GET_SEARCH_INPUT_VALUE
   );
@@ -44,13 +38,7 @@ const SearchResultsContainer = ({
   ) as User[];
   users(usersData);
 
-  if (loading)
-    return (
-      <>
-        <LoadingAnimation />
-        <p>Finding Users...</p>
-      </>
-    );
+  if (loading) return <LoadingAnimation />;
   if (error) return <p>An error has occurred fetching the data</p>;
   if (searchResults?.search.nodes?.length === 0) {
     return <p>No users found</p>;
@@ -65,45 +53,25 @@ interface SearchResultData {
 
 const SearchResults = ({ users }: SearchResultData) => {
   return (
-    <StyledSearchResults>
+    <Grid
+      container
+      direction="row"
+      justifyContent="center"
+      alignItems="flex-start"
+      spacing={2}
+    >
       {users.map(
         ({ avatarUrl, login, name, repositories: { nodes: repositories } }) => (
-          <StyledUserListItem>
-            <StyledImage
-              src={avatarUrl}
-              alt={`${login} avatar`}
-              width="200px"
-              height="200px"
-            />
-            <h2>{login}</h2>
-            <h3>{name}</h3>
-            <RepositoryList
-              key={`${login}repositories`}
-              repositories={repositories}
-            />
-          </StyledUserListItem>
+          <SearchResult
+            avatarUrl={avatarUrl}
+            login={login}
+            name={name}
+            repositories={repositories}
+          />
         )
       )}
-    </StyledSearchResults>
+    </Grid>
   );
 };
 
-export const StyledImage = styled.img`
-  border-radius: 50%;
-`;
-
-export const StyledSearchResults = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: auto auto;
-  grid-gap: 5px;
-  width: 1000px;
-`;
-
-export const StyledUserListItem = styled.div`
-  grid-template-rows: auto;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5rem;
-`;
 export default SearchResultsContainer;

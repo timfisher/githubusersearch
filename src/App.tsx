@@ -15,9 +15,7 @@ function App() {
 }
 
 const AppContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  place-items: center stretch;
+  padding: 20px;
 `;
 
 export default App;

@@ -44,7 +44,7 @@ export type SearchUserQuery = {
                           __typename?: "Repository";
                         } & Pick<
                           Repository,
-                          "name" | "stargazerCount" | "watchers"
+                          "name" | "stargazerCount" | "watchers" | "url"
                         >
                       >
                     >
@@ -75,6 +75,7 @@ export const SEARCH_USER_QUERY = gql`
               watchers {
                 totalCount
               }
+              url
             }
           }
           avatarUrl
