@@ -18,7 +18,6 @@ const SearchResultsContainer = ({
   maxRepositories,
 }: Pick<SearchUserVariables, "maxUsers" | "maxRepositories">) => {
   const user = useReactiveVar(searchInputValue);
-
   const {
     loading,
     error,
@@ -62,6 +61,7 @@ const SearchResults = ({ users }: SearchResultData) => {
       {users.map(
         ({ avatarUrl, login, name, repositories: { nodes: repositories } }) => (
           <SearchResult
+            key={login}
             avatarUrl={avatarUrl}
             login={login}
             name={name}

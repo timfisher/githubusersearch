@@ -47,9 +47,9 @@ const RepositoriesMap = (repositories: Repository[]) => {
       className={classes.root}
     >
       {repositories.length > 0 ? (
-        repositories.map(({ name, id, stargazerCount, url, watchers }) => (
+        repositories.map(({ name, stargazerCount, url, watchers }) => (
           <RepositoryDetails
-            key={id}
+            key={url}
             url={url}
             name={name}
             stargazerCount={stargazerCount}

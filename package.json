@@ -102,7 +102,10 @@
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
-    "all": true
+    "all": true,
+    "exclude": [
+      "./src/generated/*"
+    ]
   },
   "browserslist": {
     "production": [

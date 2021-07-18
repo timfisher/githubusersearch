@@ -24,11 +24,13 @@ export const cache: InMemoryCache = new InMemoryCache({
       fields: {
         searchInputValue: {
           read() {
+            /* istanbul ignore next */
             return searchInputValue();
           },
         },
         users: {
           read() {
+            /* istanbul ignore next */
             return users();
           },
         },

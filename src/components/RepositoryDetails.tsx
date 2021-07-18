@@ -56,7 +56,7 @@ const NestedList = ({
   url,
 }: Pick<Repository, "name" | "stargazerCount" | "watchers" | "url">) => {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
     setOpen(!open);
@@ -64,7 +64,7 @@ const NestedList = ({
 
   return (
     <>
-      <ListItem button onClick={handleClick}>
+      <ListItem aria-label={`${name} repository`} button onClick={handleClick}>
         <ListItemIcon>
           <GitHubIcon />
         </ListItemIcon>

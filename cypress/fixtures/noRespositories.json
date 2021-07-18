@@ -1,0 +1,20 @@
+{
+    "data": {
+      "search": {
+        "nodes": [
+          {
+            "repositories": {
+              "nodes": [],
+              "__typename": "RepositoryConnection"
+            },
+            "avatarUrl": "https://avatars.githubusercontent.com/u/3307959?v=4",
+            "login": "timfisher",
+            "name": "Random User",
+            "__typename": "User"
+          }
+        ],
+        "__typename": "SearchResultItemConnection"
+      }
+    }
+  }
+  

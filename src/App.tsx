@@ -2,7 +2,7 @@ import { SearchResults, SearchUserInput } from "./components";
 
 import styled from "styled-components";
 
-const MAX_REPOSITORIES = 10;
+const MAX_REPOSITORIES = 25;
 const MAX_USERS = 50;
 
 function App() {

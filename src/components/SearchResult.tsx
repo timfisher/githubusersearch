@@ -69,6 +69,7 @@ const SearchResult = ({
         <CardActionArea href={`https://github.com/${login}`}>
           <CardHeader title={login} subheader={name ?? login} />
           <CardMedia
+            role="img"
             className={classes.media}
             image={avatarUrl}
             title={`${login} avatar`}
@@ -77,7 +78,13 @@ const SearchResult = ({
         </CardActionArea>
         <CardActions disableSpacing>
           <CardContent onClick={handleExpandClick}>
-            <Typography align="right" variant="body1" color="textPrimary">
+            <Typography
+              role="button"
+              align="right"
+              variant="body1"
+              color="textPrimary"
+              aria-label={`Show repositories for ${login}`}
+            >
               Show Repositories
             </Typography>
           </CardContent>
@@ -87,7 +94,7 @@ const SearchResult = ({
             })}
             onClick={handleExpandClick}
             aria-expanded={expanded}
-            aria-label="show repositories"
+            aria-label={`Show repositories for ${login} icon`}
           >
             <ExpandMoreIcon />
           </IconButton>

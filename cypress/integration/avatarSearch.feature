@@ -6,6 +6,17 @@ Feature: Avatar search
         Given the user is on the search page
 
     Scenario Outline: Searching for a user that exists shows their avatar
+        Given there are mock user results
+        Given the user searches for <username>
+        Then the <username> avatar is shown
+
+        Examples:
+            | username  |
+            | timfisher |
+
+    # Can be run against production/ staging as real data
+    @smoke
+    Scenario Outline: Searching for a user that exists shows their avatar
         Given the user searches for <username>
         Then the <username> avatar is shown
 

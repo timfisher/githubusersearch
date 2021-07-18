@@ -1,8 +1,9 @@
 import { Given, Then } from "cypress-cucumber-preprocessor/steps";
 import { SearchUserQuery } from "../../../src/apollo/queries";
 
-Then(`the {} is shown as a user`, (username: string) => {
-  cy.findByRole("heading", { name: username });
+Then(`the {} is shown as a user`, (name: string) => {
+  // This should have an aria role of heading, looks like a mui bug 😳
+  cy.findByText(name);
 });
 
 Then(`the user sees {string}`, (message: string) => {

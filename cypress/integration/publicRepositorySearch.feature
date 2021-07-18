@@ -9,17 +9,19 @@ Feature: Public Repository Search
     @smoke
     Scenario Outline: Searching for a user that exists shows their public repositories
         Given the user searches for <username>
+        Given the user presses the Show repositories for <username> button
+        And the user presses the <repository> repository button
         Then the <repository> is shown
-        Then the <repository> has <stars> stars
-        Then the <repository> has <watchers> watchers
 
         Examples:
-            | username  | repository | stars | watchers |
-            | timfisher | ddd        | 0     | 0        |
+            | username  | repository |
+            | benawad   | Greyscale  |
 
     Scenario Outline: Searching for a user that exists shows their public repositories
         Given there are mock user results
         Given the user searches for <username>
+        Given the user presses the Show repositories for <username> button
+        And the user presses the <repository> repository button
         Then the <repository> is shown
         Then the <repository> has <stars> stars
         Then the <repository> has <watchers> watchers
@@ -27,3 +29,13 @@ Feature: Public Repository Search
         Examples:
             | username  | repository           | stars | watchers |
             | timfisher | topQualityRepository | 9999  | 9999     |
+
+    Scenario Outline: Searching for a user that exists shows no public repositories if they have none
+        Given there is a user with no repositories
+        Given the user searches for <username>
+        Given the user presses the Show repositories for <username> button
+        Then "No Repositories" is shown
+
+        Examples:
+            | username  |
+            | timfisher | 
