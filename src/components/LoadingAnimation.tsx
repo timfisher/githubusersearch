@@ -1,5 +1,8 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 
+/**
+ * Loading animation of the octocat
+ */
 const LoadingAnimation = () => (
   <Player
     autoplay

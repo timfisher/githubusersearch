@@ -22,18 +22,25 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-interface RepositoryListProps {
-  login: string;
-  repositories: Repository[];
-}
-
+/**
+ * Returns if the user has no public repositories
+ */
 const NoRepositories = () => (
   <Typography variant="body2" color="textSecondary" component="p">
     No Repositories
   </Typography>
 );
 
-const RepositoriesMap = (repositories: Repository[]) => {
+interface RepositoryListProps {
+  repositories: Repository[];
+}
+
+/**
+ * Returns a list of individual repository details in a list that can be expanded.
+ *
+ * @param repositories - An array of repositories to be mapped to individual dropdowns with information.
+ */
+const RepositoryList = ({ repositories }: RepositoryListProps) => {
   const classes = useStyles();
   return (
     <List
@@ -62,8 +69,5 @@ const RepositoriesMap = (repositories: Repository[]) => {
     </List>
   );
 };
-
-const RepositoryList = ({ repositories }: RepositoryListProps) =>
-  RepositoriesMap(repositories);
 
 export default RepositoryList;

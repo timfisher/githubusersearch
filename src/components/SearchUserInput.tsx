@@ -2,16 +2,22 @@ import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import { useReactiveVar } from "@apollo/client";
 import { searchInputValue, users } from "../apollo/cache";
-import styled from "styled-components";
 
 const handleInputChange = (optionValue: string | undefined) => {
   searchInputValue(optionValue);
 };
 
+/**
+ * Search User Input
+ *
+ * Uses the user data returned as a reactive var to provide autosuggestions for usernames
+ * similar to the current input
+ */
 const SearchUserInput = () => {
-  const usersData = useReactiveVar(users);
+  const userData = useReactiveVar(users);
 
-  const userData = usersData?.map((user) => user?.login) ?? [""];
+  // Map out usernames to use for autosuggestions
+  const autoSuggestUserData = userData?.map((user) => user?.login) ?? [""];
 
   return (
     <Autocomplete
@@ -20,9 +26,9 @@ const SearchUserInput = () => {
       disableClearable
       onChange={(_, optionDetail) => handleInputChange(optionDetail)}
       onInputChange={(_, inputValue) => handleInputChange(inputValue)}
-      options={userData}
+      options={autoSuggestUserData}
       renderInput={(params) => (
-        <StyledTextField
+        <TextField
           {...params}
           label="Search for user"
           margin="normal"
@@ -33,7 +39,5 @@ const SearchUserInput = () => {
     />
   );
 };
-
-export const StyledTextField = styled(TextField)``;
 
 export default SearchUserInput;

@@ -13,25 +13,6 @@ import ExpandMore from "@material-ui/icons/ExpandMore";
 import StarBorder from "@material-ui/icons/StarBorder";
 import LinkIcon from "@material-ui/icons/Link";
 
-const RepositoryDetails = ({
-  name,
-  stargazerCount,
-  url,
-  watchers,
-}: Pick<
-  Repository,
-  "name" | "stargazerCount" | "watchers" | "url"
->): JSX.Element => {
-  return (
-    <NestedList
-      name={name}
-      stargazerCount={stargazerCount}
-      watchers={watchers}
-      url={url}
-    />
-  );
-};
-
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -45,16 +26,28 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+// Mui custom link so we can link to their github page
 const ListItemLink = (props: any) => {
   return <ListItem button component="a" {...props} />;
 };
 
-const NestedList = ({
+/**
+ * Returns the details for a single repository which can be expanded.
+ *
+ * @param name - The name of the repo
+ * @param stargazerCount - The number of stars on the github repo
+ * @param url - The link to the repository
+ * @param watchers - The number of watchers on github repo
+ */
+const RepositoryDetails = ({
   name,
   stargazerCount,
-  watchers,
   url,
-}: Pick<Repository, "name" | "stargazerCount" | "watchers" | "url">) => {
+  watchers,
+}: Pick<
+  Repository,
+  "name" | "stargazerCount" | "watchers" | "url"
+>): JSX.Element => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -73,7 +66,11 @@ const NestedList = ({
       </ListItem>
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <ListItem button className={classes.nested}>
+          <ListItemLink
+            href={`${url}/stargazers`}
+            button
+            className={classes.nested}
+          >
             <ListItemIcon>
               <StarBorder />
             </ListItemIcon>
@@ -81,8 +78,12 @@ const NestedList = ({
               aria-label={`${stargazerCount} users starred this repository`}
               primary={`${stargazerCount} Star${stargazerCount > 1 ? "s" : ""}`}
             />
-          </ListItem>
-          <ListItem button className={classes.nested}>
+          </ListItemLink>
+          <ListItemLink
+            href={`${url}/watchers`}
+            button
+            className={classes.nested}
+          >
             <ListItemIcon>
               <VisibilityIcon />
             </ListItemIcon>
@@ -92,7 +93,7 @@ const NestedList = ({
                 watchers.totalCount > 1 ? "s" : ""
               }`}
             />
-          </ListItem>
+          </ListItemLink>
           <ListItemLink href={url} button className={classes.nested}>
             <ListItemIcon>
               <LinkIcon />

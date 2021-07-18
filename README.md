@@ -1,46 +1,17 @@
-# Getting Started with Create React App
+# Github Search app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project uses React, Apollo Client and Typescript to query data from the public GraphQL endpoint <https://api.github.com/graphql>
 
-## Available Scripts
+Types were generated from the public schema using @graphql-codegen and referenced for types such as User for user results, Repository for repositories within the user results and typeDefs generated for the client local state and combined with additional client vars to store the search input value and also the returned users for reference for the autocomplete suggestions. I tried utilising the reactiveVar for the search input directly in the search query `eg. searchInputValue @client @export(as: "user")` but it didn't seem to update as often as the typing so referenced the reactiveVar with the useReactiveVar hook in SearchResultsContainer.
 
-In the project directory, you can run:
+To start the project use `yarn` and `yarn start`.
 
-### `yarn start`
+The project uses Material UI components and a responsive grid for a responsive design that works on mobile. Any additional styling has been done with the Mui styling hooks or styled components for non Mui components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I have set the default repositories to be 25 which is the same as github use. This is because if you try and fetch more 502 errors happen because there is too much data returned. This could be improved with more time spent to paginate requests and also could be sorted by top starred repositories etc. if I had more time.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I used Cypress BDD scenarios based off the user stories given for the spec and 100% code coverage was achieved using these. To generate a code coverage report start the project `yarn && yarn start` in one terminal and run `yarn test:e2e:run` in another terminal. This uses `cypress code coverage` to combine the unit test coverage to one report. The report is saved to /githubsearch/coverage/lcov-report/index.html. To run the tests in the test runner to see what is going on run `yarn && yarn start` in one terminal and run `yarn test:e2e` in another terminal. I have missed writing RTL integration tests in favour of Cypress to have easier TDD to see what I was writing but can write RTL style tests as well and we are 100% covered. Scenarios with @smoke tags are supposed to be run vs production code and real GQL calls to test the production code is working. The rest use mock responses to handle edge cases and faster loading using Cypress intercept. Cypress Testing library queries were used to ensure accessibile aria was used on components (using findByRole ensures the aria is suited for the element) and the app is screen reader/keyboard user friendly.
 
-### `yarn test`
+I have generated types using `yarn codegen` but because of the custom plugin to generate typeDefs (not included with the library) it does not work well with the ``` backticks in the comments. I would sort this script out with more time but manually replaced them in the generated typedefs. Please don't run this as it will break the app. In a usual workflow this could be automated to update everytime the schema updates.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+There is a github workflow included that runs linting/tests the Cypress tests and has semantic release to automatically bump versions.

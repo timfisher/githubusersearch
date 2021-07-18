@@ -50,6 +50,18 @@ interface SearchResultProps {
   repositories: Maybe<Maybe<Repository>[]> | undefined;
 }
 
+/**
+ * Returns a user result that contains the github user name and optionally their real name. 
+ * 
+ * The avatar is displayed as a Material UI card with a dropdown to show their repositories. 
+ * 
+ * The repositories can be clicked to show stars, watchers an a link to the repository.
+ *
+ * @param avatarUrl - A link to the github avatar.
+ * @param name - Their real name.
+ * @param login - Their github id.
+ * @param repositories - A list of public repositories associated with the user.
+ */
 const SearchResult = ({
   avatarUrl,
   name,
@@ -101,10 +113,7 @@ const SearchResult = ({
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <RepositoryList
-              repositories={repositories as Repository[]}
-              login={login}
-            />
+            <RepositoryList repositories={repositories as Repository[]} />
           </CardContent>
         </Collapse>
       </Card>
