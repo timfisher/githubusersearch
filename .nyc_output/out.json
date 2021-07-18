@@ -4,32 +4,122 @@
     "statementMap": {
       "0": {
         "start": {
-          "line": 8,
+          "line": 16,
           "column": 26
         },
         "end": {
-          "line": 45,
+          "line": 33,
           "column": 1
         }
       },
       "1": {
         "start": {
-          "line": 11,
+          "line": 25,
           "column": 2
         },
         "end": {
-          "line": 44,
-          "column": 28
+          "line": 32,
+          "column": 4
         }
       },
       "2": {
         "start": {
-          "line": 47,
-          "column": 39
+          "line": 35,
+          "column": 18
         },
         "end": {
-          "line": 53,
+          "line": 46,
           "column": 1
+        }
+      },
+      "3": {
+        "start": {
+          "line": 36,
+          "column": 2
+        },
+        "end": {
+          "line": 45,
+          "column": 4
+        }
+      },
+      "4": {
+        "start": {
+          "line": 48,
+          "column": 21
+        },
+        "end": {
+          "line": 50,
+          "column": 1
+        }
+      },
+      "5": {
+        "start": {
+          "line": 49,
+          "column": 2
+        },
+        "end": {
+          "line": 49,
+          "column": 54
+        }
+      },
+      "6": {
+        "start": {
+          "line": 52,
+          "column": 19
+        },
+        "end": {
+          "line": 109,
+          "column": 1
+        }
+      },
+      "7": {
+        "start": {
+          "line": 58,
+          "column": 18
+        },
+        "end": {
+          "line": 58,
+          "column": 29
+        }
+      },
+      "8": {
+        "start": {
+          "line": 59,
+          "column": 26
+        },
+        "end": {
+          "line": 59,
+          "column": 47
+        }
+      },
+      "9": {
+        "start": {
+          "line": 61,
+          "column": 22
+        },
+        "end": {
+          "line": 63,
+          "column": 3
+        }
+      },
+      "10": {
+        "start": {
+          "line": 62,
+          "column": 4
+        },
+        "end": {
+          "line": 62,
+          "column": 19
+        }
+      },
+      "11": {
+        "start": {
+          "line": 65,
+          "column": 2
+        },
+        "end": {
+          "line": 108,
+          "column": 4
         }
       }
     },
@@ -38,71 +128,372 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 8,
+            "line": 16,
             "column": 26
           },
           "end": {
-            "line": 8,
+            "line": 16,
             "column": 27
           }
         },
         "loc": {
           "start": {
-            "line": 11,
+            "line": 24,
+            "column": 19
+          },
+          "end": {
+            "line": 33,
+            "column": 1
+          }
+        },
+        "line": 24
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 35,
+            "column": 29
+          },
+          "end": {
+            "line": 35,
+            "column": 30
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 36,
             "column": 2
           },
           "end": {
-            "line": 44,
-            "column": 28
+            "line": 45,
+            "column": 4
           }
         },
-        "line": 11
+        "line": 36
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 48,
+            "column": 21
+          },
+          "end": {
+            "line": 48,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 48,
+            "column": 37
+          },
+          "end": {
+            "line": 50,
+            "column": 1
+          }
+        },
+        "line": 48
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 52,
+            "column": 19
+          },
+          "end": {
+            "line": 52,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 57,
+            "column": 72
+          },
+          "end": {
+            "line": 109,
+            "column": 1
+          }
+        },
+        "line": 57
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 61,
+            "column": 22
+          },
+          "end": {
+            "line": 61,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 61,
+            "column": 28
+          },
+          "end": {
+            "line": 63,
+            "column": 3
+          }
+        },
+        "line": 61
       }
     },
-    "branchMap": {},
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 72,
+            "column": 9
+          },
+          "end": {
+            "line": 72,
+            "column": 47
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 72,
+              "column": 16
+            },
+            "end": {
+              "line": 72,
+              "column": 30
+            }
+          },
+          {
+            "start": {
+              "line": 72,
+              "column": 33
+            },
+            "end": {
+              "line": 72,
+              "column": 47
+            }
+          }
+        ],
+        "line": 72
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 82,
+            "column": 48
+          },
+          "end": {
+            "line": 82,
+            "column": 77
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 82,
+              "column": 69
+            },
+            "end": {
+              "line": 82,
+              "column": 72
+            }
+          },
+          {
+            "start": {
+              "line": 82,
+              "column": 75
+            },
+            "end": {
+              "line": 82,
+              "column": 77
+            }
+          }
+        ],
+        "line": 82
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 92,
+            "column": 16
+          },
+          "end": {
+            "line": 92,
+            "column": 50
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 92,
+              "column": 42
+            },
+            "end": {
+              "line": 92,
+              "column": 45
+            }
+          },
+          {
+            "start": {
+              "line": 92,
+              "column": 48
+            },
+            "end": {
+              "line": 92,
+              "column": 50
+            }
+          }
+        ],
+        "line": 92
+      }
+    },
     "s": {
-      "0": 27,
-      "1": 4246,
-      "2": 27
+      "0": 34,
+      "1": 208,
+      "2": 34,
+      "3": 8,
+      "4": 34,
+      "5": 16,
+      "6": 34,
+      "7": 224,
+      "8": 224,
+      "9": 224,
+      "10": 8,
+      "11": 224
     },
     "f": {
-      "0": 4246
+      "0": 208,
+      "1": 8,
+      "2": 16,
+      "3": 224,
+      "4": 8
     },
-    "b": {},
+    "b": {
+      "0": [
+        16,
+        208
+      ],
+      "1": [
+        112,
+        112
+      ],
+      "2": [
+        112,
+        112
+      ]
+    },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b511aaa43bbc7172423ee9912c52d50a7635d774"
+    "hash": "0443863bb1f022ed4380ad13e9b43dbfb7bd9df6"
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/src/components/RepositoryList.tsx": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/RepositoryList.tsx",
     "statementMap": {
       "0": {
         "start": {
-          "line": 8,
-          "column": 23
+          "line": 12,
+          "column": 18
         },
         "end": {
-          "line": 14,
+          "line": 23,
           "column": 1
         }
       },
       "1": {
         "start": {
-          "line": 9,
+          "line": 13,
           "column": 2
         },
         "end": {
-          "line": 13,
-          "column": 7
+          "line": 22,
+          "column": 4
         }
       },
       "2": {
         "start": {
-          "line": 11,
-          "column": 6
+          "line": 30,
+          "column": 23
         },
         "end": {
-          "line": 11,
-          "column": 72
+          "line": 34,
+          "column": 1
+        }
+      },
+      "3": {
+        "start": {
+          "line": 31,
+          "column": 2
+        },
+        "end": {
+          "line": 33,
+          "column": 15
+        }
+      },
+      "4": {
+        "start": {
+          "line": 36,
+          "column": 24
+        },
+        "end": {
+          "line": 64,
+          "column": 1
+        }
+      },
+      "5": {
+        "start": {
+          "line": 37,
+          "column": 18
+        },
+        "end": {
+          "line": 37,
+          "column": 29
+        }
+      },
+      "6": {
+        "start": {
+          "line": 38,
+          "column": 2
+        },
+        "end": {
+          "line": 63,
+          "column": 4
+        }
+      },
+      "7": {
+        "start": {
+          "line": 51,
+          "column": 10
+        },
+        "end": {
+          "line": 57,
+          "column": 12
+        }
+      },
+      "8": {
+        "start": {
+          "line": 66,
+          "column": 23
+        },
+        "end": {
+          "line": 67,
+          "column": 31
+        }
+      },
+      "9": {
+        "start": {
+          "line": 67,
+          "column": 2
+        },
+        "end": {
+          "line": 67,
+          "column": 31
         }
       }
     },
@@ -111,64 +502,998 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 8,
-            "column": 23
+            "line": 12,
+            "column": 29
           },
           "end": {
-            "line": 8,
-            "column": 24
+            "line": 12,
+            "column": 30
           }
         },
         "loc": {
           "start": {
-            "line": 9,
+            "line": 13,
             "column": 2
           },
           "end": {
-            "line": 13,
-            "column": 7
+            "line": 22,
+            "column": 4
           }
         },
-        "line": 9
+        "line": 13
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
           "start": {
-            "line": 10,
+            "line": 30,
             "column": 23
           },
           "end": {
-            "line": 10,
+            "line": 30,
             "column": 24
           }
         },
         "loc": {
           "start": {
-            "line": 11,
-            "column": 6
+            "line": 31,
+            "column": 2
           },
           "end": {
-            "line": 11,
-            "column": 72
+            "line": 33,
+            "column": 15
           }
         },
-        "line": 11
+        "line": 31
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 36,
+            "column": 24
+          },
+          "end": {
+            "line": 36,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 36,
+            "column": 56
+          },
+          "end": {
+            "line": 64,
+            "column": 1
+          }
+        },
+        "line": 36
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 50,
+            "column": 25
+          },
+          "end": {
+            "line": 50,
+            "column": 26
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 51,
+            "column": 10
+          },
+          "end": {
+            "line": 57,
+            "column": 12
+          }
+        },
+        "line": 51
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 66,
+            "column": 23
+          },
+          "end": {
+            "line": 66,
+            "column": 24
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 67,
+            "column": 2
+          },
+          "end": {
+            "line": 67,
+            "column": 31
+          }
+        },
+        "line": 67
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 49,
+            "column": 7
+          },
+          "end": {
+            "line": 61,
+            "column": 7
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 50,
+              "column": 8
+            },
+            "end": {
+              "line": 58,
+              "column": 10
+            }
+          },
+          {
+            "start": {
+              "line": 60,
+              "column": 8
+            },
+            "end": {
+              "line": 60,
+              "column": 26
+            }
+          }
+        ],
+        "line": 49
+      }
+    },
+    "s": {
+      "0": 34,
+      "1": 10,
+      "2": 34,
+      "3": 4,
+      "4": 34,
+      "5": 20,
+      "6": 20,
+      "7": 208,
+      "8": 34,
+      "9": 20
+    },
+    "f": {
+      "0": 10,
+      "1": 4,
+      "2": 20,
+      "3": 208,
+      "4": 20
+    },
+    "b": {
+      "0": [
+        16,
+        4
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "b65b34f1d32c8e76e275c36686c16175036ba8a8"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/generated/graphql.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/generated/graphql.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 24
+        },
+        "end": {
+          "line": 7,
+          "column": 26
+        }
+      },
+      "1": {
+        "start": {
+          "line": 22062,
+          "column": 34
+        },
+        "end": {
+          "line": 22084,
+          "column": 5
+        }
+      },
+      "2": {
+        "start": {
+          "line": 22105,
+          "column": 24
+        },
+        "end": {
+          "line": 22105,
+          "column": 59
+        }
+      },
+      "3": {
+        "start": {
+          "line": 22106,
+          "column": 8
+        },
+        "end": {
+          "line": 22106,
+          "column": 103
+        }
+      },
+      "4": {
+        "start": {
+          "line": 22109,
+          "column": 26
+        },
+        "end": {
+          "line": 22109,
+          "column": 61
+        }
+      },
+      "5": {
+        "start": {
+          "line": 22110,
+          "column": 10
+        },
+        "end": {
+          "line": 22110,
+          "column": 109
+        }
+      },
+      "6": {
+        "start": {
+          "line": 22116,
+          "column": 24
+        },
+        "end": {
+          "line": 51219,
+          "column": 1
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "useSearchUserQuery",
+        "decl": {
+          "start": {
+            "line": 22104,
+            "column": 16
+          },
+          "end": {
+            "line": 22104,
+            "column": 34
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22104,
+            "column": 116
+          },
+          "end": {
+            "line": 22107,
+            "column": 7
+          }
+        },
+        "line": 22104
+      },
+      "1": {
+        "name": "useSearchUserLazyQuery",
+        "decl": {
+          "start": {
+            "line": 22108,
+            "column": 16
+          },
+          "end": {
+            "line": 22108,
+            "column": 38
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22108,
+            "column": 125
+          },
+          "end": {
+            "line": 22111,
+            "column": 9
+          }
+        },
+        "line": 22108
       }
     },
     "branchMap": {},
     "s": {
-      "0": 27,
-      "1": 704,
-      "2": 4246
+      "0": 34,
+      "1": 34,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 34
     },
     "f": {
-      "0": 704,
-      "1": 4246
+      "0": 0,
+      "1": 0
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "0b398cdc3a4ba927aca81235ecfb31b445b42732"
+    "hash": "da060befdbb1a92e3c121c86af336d198007143b"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/cache.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/cache.ts",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 23
+        },
+        "end": {
+          "line": 10,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 12,
+          "column": 46
+        },
+        "end": {
+          "line": 15,
+          "column": 2
+        }
+      },
+      "2": {
+        "start": {
+          "line": 17,
+          "column": 32
+        },
+        "end": {
+          "line": 17,
+          "column": 51
+        }
+      },
+      "3": {
+        "start": {
+          "line": 19,
+          "column": 21
+        },
+        "end": {
+          "line": 19,
+          "column": 40
+        }
+      },
+      "4": {
+        "start": {
+          "line": 21,
+          "column": 36
+        },
+        "end": {
+          "line": 40,
+          "column": 2
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 26,
+            "column": 10
+          },
+          "end": {
+            "line": 26,
+            "column": 11
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 17
+          },
+          "end": {
+            "line": 29,
+            "column": 11
+          }
+        },
+        "line": 26
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 32,
+            "column": 10
+          },
+          "end": {
+            "line": 32,
+            "column": 11
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 32,
+            "column": 17
+          },
+          "end": {
+            "line": 35,
+            "column": 11
+          }
+        },
+        "line": 32
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 34,
+      "1": 34,
+      "2": 34,
+      "3": 34,
+      "4": 34
+    },
+    "f": {
+      "0": 0,
+      "1": 0
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "b26023c065dac99a492f8a50b387abe5da0b7581"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchUserInput.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchUserInput.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 26
+        },
+        "end": {
+          "line": 9,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 8,
+          "column": 2
+        },
+        "end": {
+          "line": 8,
+          "column": 32
+        }
+      },
+      "2": {
+        "start": {
+          "line": 11,
+          "column": 24
+        },
+        "end": {
+          "line": 35,
+          "column": 1
+        }
+      },
+      "3": {
+        "start": {
+          "line": 12,
+          "column": 20
+        },
+        "end": {
+          "line": 12,
+          "column": 41
+        }
+      },
+      "4": {
+        "start": {
+          "line": 14,
+          "column": 19
+        },
+        "end": {
+          "line": 14,
+          "column": 64
+        }
+      },
+      "5": {
+        "start": {
+          "line": 14,
+          "column": 44
+        },
+        "end": {
+          "line": 14,
+          "column": 55
+        }
+      },
+      "6": {
+        "start": {
+          "line": 16,
+          "column": 2
+        },
+        "end": {
+          "line": 34,
+          "column": 4
+        }
+      },
+      "7": {
+        "start": {
+          "line": 21,
+          "column": 37
+        },
+        "end": {
+          "line": 21,
+          "column": 68
+        }
+      },
+      "8": {
+        "start": {
+          "line": 22,
+          "column": 40
+        },
+        "end": {
+          "line": 22,
+          "column": 69
+        }
+      },
+      "9": {
+        "start": {
+          "line": 25,
+          "column": 8
+        },
+        "end": {
+          "line": 31,
+          "column": 10
+        }
+      },
+      "10": {
+        "start": {
+          "line": 37,
+          "column": 31
+        },
+        "end": {
+          "line": 37,
+          "column": 50
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 26
+          },
+          "end": {
+            "line": 7,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 63
+          },
+          "end": {
+            "line": 9,
+            "column": 1
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 24
+          },
+          "end": {
+            "line": 11,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 30
+          },
+          "end": {
+            "line": 35,
+            "column": 1
+          }
+        },
+        "line": 11
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 34
+          },
+          "end": {
+            "line": 14,
+            "column": 35
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 44
+          },
+          "end": {
+            "line": 14,
+            "column": 55
+          }
+        },
+        "line": 14
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 21,
+            "column": 16
+          },
+          "end": {
+            "line": 21,
+            "column": 17
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 37
+          },
+          "end": {
+            "line": 21,
+            "column": 68
+          }
+        },
+        "line": 21
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 22,
+            "column": 21
+          },
+          "end": {
+            "line": 22,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 40
+          },
+          "end": {
+            "line": 22,
+            "column": 69
+          }
+        },
+        "line": 22
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 19
+          },
+          "end": {
+            "line": 24,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 8
+          },
+          "end": {
+            "line": 31,
+            "column": 10
+          }
+        },
+        "line": 25
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 19
+          },
+          "end": {
+            "line": 14,
+            "column": 64
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 14,
+              "column": 19
+            },
+            "end": {
+              "line": 14,
+              "column": 56
+            }
+          },
+          {
+            "start": {
+              "line": 14,
+              "column": 60
+            },
+            "end": {
+              "line": 14,
+              "column": 64
+            }
+          }
+        ],
+        "line": 14
+      }
+    },
+    "s": {
+      "0": 34,
+      "1": 298,
+      "2": 34,
+      "3": 356,
+      "4": 356,
+      "5": 302,
+      "6": 356,
+      "7": 4,
+      "8": 294,
+      "9": 1100,
+      "10": 34
+    },
+    "f": {
+      "0": 298,
+      "1": 356,
+      "2": 302,
+      "3": 4,
+      "4": 294,
+      "5": 1100
+    },
+    "b": {
+      "0": [
+        356,
+        146
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "6bfc7fefdb826e8ccb5df5ad364e12091f333c61"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResult.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResult.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 22,
+          "column": 18
+        },
+        "end": {
+          "line": 44,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 23,
+          "column": 2
+        },
+        "end": {
+          "line": 43,
+          "column": 4
+        }
+      },
+      "2": {
+        "start": {
+          "line": 53,
+          "column": 21
+        },
+        "end": {
+          "line": 113,
+          "column": 1
+        }
+      },
+      "3": {
+        "start": {
+          "line": 59,
+          "column": 18
+        },
+        "end": {
+          "line": 59,
+          "column": 29
+        }
+      },
+      "4": {
+        "start": {
+          "line": 60,
+          "column": 34
+        },
+        "end": {
+          "line": 60,
+          "column": 49
+        }
+      },
+      "5": {
+        "start": {
+          "line": 62,
+          "column": 28
+        },
+        "end": {
+          "line": 64,
+          "column": 3
+        }
+      },
+      "6": {
+        "start": {
+          "line": 63,
+          "column": 4
+        },
+        "end": {
+          "line": 63,
+          "column": 27
+        }
+      },
+      "7": {
+        "start": {
+          "line": 66,
+          "column": 2
+        },
+        "end": {
+          "line": 112,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 22,
+            "column": 29
+          },
+          "end": {
+            "line": 22,
+            "column": 30
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 2
+          },
+          "end": {
+            "line": 43,
+            "column": 4
+          }
+        },
+        "line": 23
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 53,
+            "column": 21
+          },
+          "end": {
+            "line": 53,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 58,
+            "column": 25
+          },
+          "end": {
+            "line": 113,
+            "column": 1
+          }
+        },
+        "line": 58
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 62,
+            "column": 28
+          },
+          "end": {
+            "line": 62,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 62,
+            "column": 34
+          },
+          "end": {
+            "line": 64,
+            "column": 3
+          }
+        },
+        "line": 62
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 70,
+            "column": 47
+          },
+          "end": {
+            "line": 70,
+            "column": 60
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 70,
+              "column": 47
+            },
+            "end": {
+              "line": 70,
+              "column": 51
+            }
+          },
+          {
+            "start": {
+              "line": 70,
+              "column": 55
+            },
+            "end": {
+              "line": 70,
+              "column": 60
+            }
+          }
+        ],
+        "line": 70
+      }
+    },
+    "s": {
+      "0": 34,
+      "1": 28,
+      "2": 34,
+      "3": 322,
+      "4": 322,
+      "5": 322,
+      "6": 10,
+      "7": 322
+    },
+    "f": {
+      "0": 28,
+      "1": 322,
+      "2": 10
+    },
+    "b": {
+      "0": [
+        322,
+        44
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "28389c2a4126e306124bb806e4a674acf4012682"
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/queries.ts": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/queries.ts",
@@ -179,27 +1504,7 @@
           "column": 33
         },
         "end": {
-          "line": 87,
-          "column": 1
-        }
-      },
-      "1": {
-        "start": {
-          "line": 93,
-          "column": 38
-        },
-        "end": {
-          "line": 97,
-          "column": 1
-        }
-      },
-      "2": {
-        "start": {
-          "line": 103,
-          "column": 25
-        },
-        "end": {
-          "line": 107,
+          "line": 88,
           "column": 1
         }
       }
@@ -207,76 +1512,184 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 27,
-      "1": 27,
-      "2": 27
+      "0": 34
     },
     "f": {},
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "7be8aa857a0ae6300b7de5dd5822cb7e6c503a8f"
+    "hash": "82db9021d915b01822b32b1afdc677ef60ff1319"
   },
-  "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/cache.ts": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/cache.ts",
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResults.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResults.tsx",
     "statementMap": {
       "0": {
         "start": {
-          "line": 4,
-          "column": 24
+          "line": 16,
+          "column": 31
         },
         "end": {
-          "line": 9,
+          "line": 46,
           "column": 1
         }
       },
       "1": {
         "start": {
-          "line": 11,
-          "column": 32
+          "line": 20,
+          "column": 15
         },
         "end": {
-          "line": 11,
-          "column": 51
+          "line": 20,
+          "column": 47
         }
       },
       "2": {
         "start": {
-          "line": 13,
-          "column": 21
+          "line": 25,
+          "column": 6
         },
         "end": {
-          "line": 13,
-          "column": 40
+          "line": 31,
+          "column": 4
         }
       },
       "3": {
         "start": {
-          "line": 15,
-          "column": 36
+          "line": 32,
+          "column": 20
         },
         "end": {
-          "line": 32,
-          "column": 2
+          "line": 34,
+          "column": 13
         }
       },
       "4": {
         "start": {
-          "line": 21,
-          "column": 12
+          "line": 33,
+          "column": 14
         },
         "end": {
-          "line": 21,
-          "column": 38
+          "line": 33,
+          "column": 41
         }
       },
       "5": {
         "start": {
-          "line": 26,
-          "column": 12
+          "line": 35,
+          "column": 2
         },
         "end": {
-          "line": 26,
-          "column": 27
+          "line": 37,
+          "column": 18
+        }
+      },
+      "6": {
+        "start": {
+          "line": 36,
+          "column": 4
+        },
+        "end": {
+          "line": 36,
+          "column": 21
+        }
+      },
+      "7": {
+        "start": {
+          "line": 39,
+          "column": 2
+        },
+        "end": {
+          "line": 39,
+          "column": 43
+        }
+      },
+      "8": {
+        "start": {
+          "line": 39,
+          "column": 15
+        },
+        "end": {
+          "line": 39,
+          "column": 43
+        }
+      },
+      "9": {
+        "start": {
+          "line": 40,
+          "column": 2
+        },
+        "end": {
+          "line": 40,
+          "column": 67
+        }
+      },
+      "10": {
+        "start": {
+          "line": 40,
+          "column": 13
+        },
+        "end": {
+          "line": 40,
+          "column": 67
+        }
+      },
+      "11": {
+        "start": {
+          "line": 41,
+          "column": 2
+        },
+        "end": {
+          "line": 43,
+          "column": 3
+        }
+      },
+      "12": {
+        "start": {
+          "line": 42,
+          "column": 4
+        },
+        "end": {
+          "line": 42,
+          "column": 33
+        }
+      },
+      "13": {
+        "start": {
+          "line": 45,
+          "column": 2
+        },
+        "end": {
+          "line": 45,
+          "column": 45
+        }
+      },
+      "14": {
+        "start": {
+          "line": 52,
+          "column": 22
+        },
+        "end": {
+          "line": 74,
+          "column": 1
+        }
+      },
+      "15": {
+        "start": {
+          "line": 53,
+          "column": 2
+        },
+        "end": {
+          "line": 73,
+          "column": 4
+        }
+      },
+      "16": {
+        "start": {
+          "line": 63,
+          "column": 10
+        },
+        "end": {
+          "line": 69,
+          "column": 12
         }
       }
     },
@@ -285,75 +1698,283 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 20,
-            "column": 10
+            "line": 16,
+            "column": 31
           },
           "end": {
-            "line": 20,
-            "column": 11
+            "line": 16,
+            "column": 32
           }
         },
         "loc": {
           "start": {
-            "line": 20,
-            "column": 17
+            "line": 19,
+            "column": 65
           },
           "end": {
-            "line": 22,
-            "column": 11
+            "line": 46,
+            "column": 1
           }
         },
-        "line": 20
+        "line": 19
       },
       "1": {
         "name": "(anonymous_1)",
         "decl": {
           "start": {
-            "line": 25,
-            "column": 10
+            "line": 33,
+            "column": 4
           },
           "end": {
-            "line": 25,
-            "column": 11
+            "line": 33,
+            "column": 5
           }
         },
         "loc": {
           "start": {
-            "line": 25,
-            "column": 17
+            "line": 33,
+            "column": 14
           },
           "end": {
-            "line": 27,
-            "column": 11
+            "line": 33,
+            "column": 41
           }
         },
-        "line": 25
+        "line": 33
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 35,
+            "column": 12
+          },
+          "end": {
+            "line": 35,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 35,
+            "column": 18
+          },
+          "end": {
+            "line": 37,
+            "column": 3
+          }
+        },
+        "line": 35
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 52,
+            "column": 22
+          },
+          "end": {
+            "line": 52,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 52,
+            "column": 55
+          },
+          "end": {
+            "line": 74,
+            "column": 1
+          }
+        },
+        "line": 52
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 62,
+            "column": 8
+          },
+          "end": {
+            "line": 62,
+            "column": 9
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 63,
+            "column": 10
+          },
+          "end": {
+            "line": 69,
+            "column": 12
+          }
+        },
+        "line": 63
       }
     },
-    "branchMap": {},
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 39,
+            "column": 2
+          },
+          "end": {
+            "line": 39,
+            "column": 43
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 39,
+              "column": 2
+            },
+            "end": {
+              "line": 39,
+              "column": 43
+            }
+          },
+          {
+            "start": {
+              "line": 39,
+              "column": 2
+            },
+            "end": {
+              "line": 39,
+              "column": 43
+            }
+          }
+        ],
+        "line": 39
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 40,
+            "column": 2
+          },
+          "end": {
+            "line": 40,
+            "column": 67
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 40,
+              "column": 2
+            },
+            "end": {
+              "line": 40,
+              "column": 67
+            }
+          },
+          {
+            "start": {
+              "line": 40,
+              "column": 2
+            },
+            "end": {
+              "line": 40,
+              "column": 67
+            }
+          }
+        ],
+        "line": 40
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 41,
+            "column": 2
+          },
+          "end": {
+            "line": 43,
+            "column": 3
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 41,
+              "column": 2
+            },
+            "end": {
+              "line": 43,
+              "column": 3
+            }
+          },
+          {
+            "start": {
+              "line": 41,
+              "column": 2
+            },
+            "end": {
+              "line": 43,
+              "column": 3
+            }
+          }
+        ],
+        "line": 41
+      }
+    },
     "s": {
-      "0": 27,
-      "1": 27,
-      "2": 27,
-      "3": 27,
-      "4": 265,
-      "5": 149
+      "0": 34,
+      "1": 848,
+      "2": 848,
+      "3": 848,
+      "4": 358,
+      "5": 848,
+      "6": 144,
+      "7": 848,
+      "8": 666,
+      "9": 182,
+      "10": 16,
+      "11": 166,
+      "12": 20,
+      "13": 146,
+      "14": 34,
+      "15": 126,
+      "16": 302
     },
     "f": {
-      "0": 265,
-      "1": 149
+      "0": 848,
+      "1": 358,
+      "2": 144,
+      "3": 126,
+      "4": 302
     },
-    "b": {},
+    "b": {
+      "0": [
+        666,
+        182
+      ],
+      "1": [
+        16,
+        166
+      ],
+      "2": [
+        20,
+        146
+      ]
+    },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b3f5dcd42efa5a5d8f56d13e064e068ec6fccedb"
+    "hash": "a7366178d7f8e995cb9643e91fb5e7c1cf177745"
   },
-  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchUserInput.tsx": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchUserInput.tsx",
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/LoadingAnimation.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/LoadingAnimation.tsx",
     "statementMap": {
       "0": {
         "start": {
-          "line": 8,
-          "column": 26
+          "line": 3,
+          "column": 25
         },
         "end": {
           "line": 10,
@@ -362,102 +1983,12 @@
       },
       "1": {
         "start": {
-          "line": 9,
+          "line": 4,
           "column": 2
         },
         "end": {
           "line": 9,
-          "column": 32
-        }
-      },
-      "2": {
-        "start": {
-          "line": 12,
-          "column": 24
-        },
-        "end": {
-          "line": 36,
-          "column": 1
-        }
-      },
-      "3": {
-        "start": {
-          "line": 13,
-          "column": 19
-        },
-        "end": {
-          "line": 13,
-          "column": 52
-        }
-      },
-      "4": {
-        "start": {
-          "line": 15,
-          "column": 19
-        },
-        "end": {
-          "line": 15,
-          "column": 65
-        }
-      },
-      "5": {
-        "start": {
-          "line": 15,
-          "column": 45
-        },
-        "end": {
-          "line": 15,
-          "column": 56
-        }
-      },
-      "6": {
-        "start": {
-          "line": 17,
-          "column": 2
-        },
-        "end": {
-          "line": 35,
           "column": 4
-        }
-      },
-      "7": {
-        "start": {
-          "line": 22,
-          "column": 37
-        },
-        "end": {
-          "line": 22,
-          "column": 68
-        }
-      },
-      "8": {
-        "start": {
-          "line": 23,
-          "column": 40
-        },
-        "end": {
-          "line": 23,
-          "column": 69
-        }
-      },
-      "9": {
-        "start": {
-          "line": 26,
-          "column": 8
-        },
-        "end": {
-          "line": 32,
-          "column": 10
-        }
-      },
-      "10": {
-        "start": {
-          "line": 38,
-          "column": 31
-        },
-        "end": {
-          "line": 40,
-          "column": 1
         }
       }
     },
@@ -466,700 +1997,38 @@
         "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 8,
-            "column": 26
-          },
-          "end": {
-            "line": 8,
-            "column": 27
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 8,
-            "column": 63
-          },
-          "end": {
-            "line": 10,
-            "column": 1
-          }
-        },
-        "line": 8
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": {
-            "line": 12,
-            "column": 24
-          },
-          "end": {
-            "line": 12,
+            "line": 3,
             "column": 25
+          },
+          "end": {
+            "line": 3,
+            "column": 26
           }
         },
         "loc": {
           "start": {
-            "line": 12,
-            "column": 30
+            "line": 4,
+            "column": 2
           },
           "end": {
-            "line": 36,
-            "column": 1
-          }
-        },
-        "line": 12
-      },
-      "2": {
-        "name": "(anonymous_2)",
-        "decl": {
-          "start": {
-            "line": 15,
-            "column": 35
-          },
-          "end": {
-            "line": 15,
-            "column": 36
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 15,
-            "column": 45
-          },
-          "end": {
-            "line": 15,
-            "column": 56
-          }
-        },
-        "line": 15
-      },
-      "3": {
-        "name": "(anonymous_3)",
-        "decl": {
-          "start": {
-            "line": 22,
-            "column": 16
-          },
-          "end": {
-            "line": 22,
-            "column": 17
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 22,
-            "column": 37
-          },
-          "end": {
-            "line": 22,
-            "column": 68
-          }
-        },
-        "line": 22
-      },
-      "4": {
-        "name": "(anonymous_4)",
-        "decl": {
-          "start": {
-            "line": 23,
-            "column": 21
-          },
-          "end": {
-            "line": 23,
-            "column": 22
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 23,
-            "column": 40
-          },
-          "end": {
-            "line": 23,
-            "column": 69
-          }
-        },
-        "line": 23
-      },
-      "5": {
-        "name": "(anonymous_5)",
-        "decl": {
-          "start": {
-            "line": 25,
-            "column": 19
-          },
-          "end": {
-            "line": 25,
-            "column": 20
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 26,
-            "column": 8
-          },
-          "end": {
-            "line": 32,
-            "column": 10
-          }
-        },
-        "line": 26
-      }
-    },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": {
-            "line": 15,
-            "column": 19
-          },
-          "end": {
-            "line": 15,
-            "column": 65
-          }
-        },
-        "type": "binary-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 15,
-              "column": 19
-            },
-            "end": {
-              "line": 15,
-              "column": 57
-            }
-          },
-          {
-            "start": {
-              "line": 15,
-              "column": 61
-            },
-            "end": {
-              "line": 15,
-              "column": 65
-            }
-          }
-        ],
-        "line": 15
-      }
-    },
-    "s": {
-      "0": 27,
-      "1": 211,
-      "2": 27,
-      "3": 258,
-      "4": 258,
-      "5": 704,
-      "6": 258,
-      "7": 0,
-      "8": 211,
-      "9": 746,
-      "10": 27
-    },
-    "f": {
-      "0": 211,
-      "1": 258,
-      "2": 704,
-      "3": 0,
-      "4": 211,
-      "5": 746
-    },
-    "b": {
-      "0": [
-        258,
-        100
-      ]
-    },
-    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "3218e132e880b52a68671da2682926fb7b8da04a"
-  },
-  "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResults.tsx": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/SearchResults.tsx",
-    "statementMap": {
-      "0": {
-        "start": {
-          "line": 22,
-          "column": 31
-        },
-        "end": {
-          "line": 53,
-          "column": 1
-        }
-      },
-      "1": {
-        "start": {
-          "line": 26,
-          "column": 25
-        },
-        "end": {
-          "line": 28,
-          "column": 3
-        }
-      },
-      "2": {
-        "start": {
-          "line": 34,
-          "column": 6
-        },
-        "end": {
-          "line": 40,
-          "column": 4
-        }
-      },
-      "3": {
-        "start": {
-          "line": 41,
-          "column": 20
-        },
-        "end": {
-          "line": 43,
-          "column": 13
-        }
-      },
-      "4": {
-        "start": {
-          "line": 42,
-          "column": 14
-        },
-        "end": {
-          "line": 42,
-          "column": 41
-        }
-      },
-      "5": {
-        "start": {
-          "line": 44,
-          "column": 2
-        },
-        "end": {
-          "line": 44,
-          "column": 19
-        }
-      },
-      "6": {
-        "start": {
-          "line": 46,
-          "column": 2
-        },
-        "end": {
-          "line": 46,
-          "column": 41
-        }
-      },
-      "7": {
-        "start": {
-          "line": 46,
-          "column": 15
-        },
-        "end": {
-          "line": 46,
-          "column": 41
-        }
-      },
-      "8": {
-        "start": {
-          "line": 47,
-          "column": 2
-        },
-        "end": {
-          "line": 47,
-          "column": 67
-        }
-      },
-      "9": {
-        "start": {
-          "line": 47,
-          "column": 13
-        },
-        "end": {
-          "line": 47,
-          "column": 67
-        }
-      },
-      "10": {
-        "start": {
-          "line": 48,
-          "column": 2
-        },
-        "end": {
-          "line": 50,
-          "column": 3
-        }
-      },
-      "11": {
-        "start": {
-          "line": 49,
-          "column": 4
-        },
-        "end": {
-          "line": 49,
-          "column": 33
-        }
-      },
-      "12": {
-        "start": {
-          "line": 52,
-          "column": 2
-        },
-        "end": {
-          "line": 52,
-          "column": 45
-        }
-      },
-      "13": {
-        "start": {
-          "line": 59,
-          "column": 22
-        },
-        "end": {
-          "line": 82,
-          "column": 1
-        }
-      },
-      "14": {
-        "start": {
-          "line": 60,
-          "column": 2
-        },
-        "end": {
-          "line": 81,
-          "column": 4
-        }
-      },
-      "15": {
-        "start": {
-          "line": 64,
-          "column": 10
-        },
-        "end": {
-          "line": 77,
-          "column": 31
-        }
-      },
-      "16": {
-        "start": {
-          "line": 84,
-          "column": 27
-        },
-        "end": {
-          "line": 86,
-          "column": 1
-        }
-      },
-      "17": {
-        "start": {
-          "line": 88,
-          "column": 35
-        },
-        "end": {
-          "line": 94,
-          "column": 1
-        }
-      },
-      "18": {
-        "start": {
-          "line": 96,
-          "column": 34
-        },
-        "end": {
-          "line": 101,
-          "column": 1
-        }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": {
-            "line": 22,
-            "column": 31
-          },
-          "end": {
-            "line": 22,
-            "column": 32
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 25,
-            "column": 21
-          },
-          "end": {
-            "line": 53,
-            "column": 1
-          }
-        },
-        "line": 25
-      },
-      "1": {
-        "name": "(anonymous_1)",
-        "decl": {
-          "start": {
-            "line": 42,
+            "line": 9,
             "column": 4
-          },
-          "end": {
-            "line": 42,
-            "column": 5
           }
         },
-        "loc": {
-          "start": {
-            "line": 42,
-            "column": 14
-          },
-          "end": {
-            "line": 42,
-            "column": 41
-          }
-        },
-        "line": 42
-      },
-      "2": {
-        "name": "(anonymous_2)",
-        "decl": {
-          "start": {
-            "line": 59,
-            "column": 22
-          },
-          "end": {
-            "line": 59,
-            "column": 23
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 59,
-            "column": 55
-          },
-          "end": {
-            "line": 82,
-            "column": 1
-          }
-        },
-        "line": 59
-      },
-      "3": {
-        "name": "(anonymous_3)",
-        "decl": {
-          "start": {
-            "line": 63,
-            "column": 8
-          },
-          "end": {
-            "line": 63,
-            "column": 9
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 64,
-            "column": 10
-          },
-          "end": {
-            "line": 77,
-            "column": 31
-          }
-        },
-        "line": 64
+        "line": 4
       }
     },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": {
-            "line": 36,
-            "column": 12
-          },
-          "end": {
-            "line": 36,
-            "column": 40
-          }
-        },
-        "type": "binary-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 36,
-              "column": 12
-            },
-            "end": {
-              "line": 36,
-              "column": 34
-            }
-          },
-          {
-            "start": {
-              "line": 36,
-              "column": 38
-            },
-            "end": {
-              "line": 36,
-              "column": 40
-            }
-          }
-        ],
-        "line": 36
-      },
-      "1": {
-        "loc": {
-          "start": {
-            "line": 46,
-            "column": 2
-          },
-          "end": {
-            "line": 46,
-            "column": 41
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 46,
-              "column": 2
-            },
-            "end": {
-              "line": 46,
-              "column": 41
-            }
-          },
-          {
-            "start": {
-              "line": 46,
-              "column": 2
-            },
-            "end": {
-              "line": 46,
-              "column": 41
-            }
-          }
-        ],
-        "line": 46
-      },
-      "2": {
-        "loc": {
-          "start": {
-            "line": 47,
-            "column": 2
-          },
-          "end": {
-            "line": 47,
-            "column": 67
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 47,
-              "column": 2
-            },
-            "end": {
-              "line": 47,
-              "column": 67
-            }
-          },
-          {
-            "start": {
-              "line": 47,
-              "column": 2
-            },
-            "end": {
-              "line": 47,
-              "column": 67
-            }
-          }
-        ],
-        "line": 47
-      },
-      "3": {
-        "loc": {
-          "start": {
-            "line": 48,
-            "column": 2
-          },
-          "end": {
-            "line": 50,
-            "column": 3
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 48,
-              "column": 2
-            },
-            "end": {
-              "line": 50,
-              "column": 3
-            }
-          },
-          {
-            "start": {
-              "line": 48,
-              "column": 2
-            },
-            "end": {
-              "line": 50,
-              "column": 3
-            }
-          }
-        ],
-        "line": 48
-      }
-    },
+    "branchMap": {},
     "s": {
-      "0": 27,
-      "1": 992,
-      "2": 992,
-      "3": 992,
-      "4": 932,
-      "5": 992,
-      "6": 992,
-      "7": 922,
-      "8": 70,
-      "9": 4,
-      "10": 66,
-      "11": 16,
-      "12": 50,
-      "13": 27,
-      "14": 42,
-      "15": 704,
-      "16": 27,
-      "17": 27,
-      "18": 27
+      "0": 34,
+      "1": 672
     },
     "f": {
-      "0": 992,
-      "1": 932,
-      "2": 42,
-      "3": 704
+      "0": 672
     },
-    "b": {
-      "0": [
-        992,
-        0
-      ],
-      "1": [
-        922,
-        70
-      ],
-      "2": [
-        4,
-        66
-      ],
-      "3": [
-        16,
-        50
-      ]
-    },
+    "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "522b1f89d5928c276a11f5847aa14ffa8ca578bd"
+    "hash": "e24d02ce0cf18cfbeabd9c9eba8426135870f721"
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/src/components/index.ts": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/components/index.ts",
@@ -1211,7 +2080,7 @@
           "column": 21
         },
         "end": {
-          "line": 21,
+          "line": 19,
           "column": 1
         }
       }
@@ -1244,17 +2113,17 @@
     },
     "branchMap": {},
     "s": {
-      "0": 27,
-      "1": 27,
-      "2": 75,
-      "3": 27
+      "0": 34,
+      "1": 34,
+      "2": 78,
+      "3": 34
     },
     "f": {
-      "0": 75
+      "0": 78
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b5318173a8e323a2131a7b64a4d2d4121d783e93"
+    "hash": "70806f518026ca91a4481b2f3a22863d07d60f98"
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/apolloClient.ts": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/apolloClient.ts",
@@ -1315,7 +2184,7 @@
           "column": 34
         },
         "end": {
-          "line": 30,
+          "line": 31,
           "column": 1
         }
       },
@@ -1326,7 +2195,7 @@
         },
         "end": {
           "line": 24,
-          "column": 62
+          "column": 64
         }
       },
       "7": {
@@ -1335,7 +2204,7 @@
           "column": 2
         },
         "end": {
-          "line": 29,
+          "line": 30,
           "column": 5
         }
       }
@@ -1407,32 +2276,74 @@
             "column": 40
           },
           "end": {
-            "line": 30,
+            "line": 31,
             "column": 1
           }
         },
         "line": 23
       }
     },
-    "branchMap": {},
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 24,
+            "column": 20
+          },
+          "end": {
+            "line": 24,
+            "column": 64
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 24,
+              "column": 20
+            },
+            "end": {
+              "line": 24,
+              "column": 58
+            }
+          },
+          {
+            "start": {
+              "line": 24,
+              "column": 62
+            },
+            "end": {
+              "line": 24,
+              "column": 64
+            }
+          }
+        ],
+        "line": 24
+      }
+    },
     "s": {
-      "0": 27,
-      "1": 27,
-      "2": 27,
-      "3": 238,
-      "4": 238,
-      "5": 27,
-      "6": 27,
-      "7": 27
+      "0": 34,
+      "1": 34,
+      "2": 34,
+      "3": 328,
+      "4": 328,
+      "5": 34,
+      "6": 34,
+      "7": 34
     },
     "f": {
-      "0": 27,
-      "1": 238,
-      "2": 27
+      "0": 34,
+      "1": 328,
+      "2": 34
     },
-    "b": {},
+    "b": {
+      "0": [
+        34,
+        0
+      ]
+    },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "8fb4faa9d8911a2606fa93460007f68b1a665092"
+    "hash": "11de71d313095d2aaedfc6e21dff221ec2f87607"
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/src/index.tsx": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/index.tsx",
@@ -1461,13 +2372,22 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 27,
-      "1": 27
+      "0": 34,
+      "1": 34
     },
     "f": {},
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "5adc36c832ed60a3360dd7e1cac34fd936b1f698"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/typescript-typedefs.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/typescript-typedefs.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/block-navigation.js": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/block-navigation.js",
@@ -1496,8 +2416,8 @@
     "f": {},
     "b": {}
   },
-  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/2.20be4e5e.chunk.js": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/2.20be4e5e.chunk.js",
+  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/2.6118dbf0.chunk.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/2.6118dbf0.chunk.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -1505,8 +2425,8 @@
     "f": {},
     "b": {}
   },
-  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/main.cdea2cb0.chunk.js": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/main.cdea2cb0.chunk.js",
+  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/main.fcbf315b.chunk.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/main.fcbf315b.chunk.js",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -1595,8 +2515,26 @@
     "f": {},
     "b": {}
   },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/repositories.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/repositories.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
   "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/userSearch.ts": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/userSearch.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/users.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/users.ts",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},
@@ -1624,15 +2562,6 @@
   },
   "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/usernameSearch/usernameSearch.ts": {
     "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/usernameSearch/usernameSearch.ts",
-    "statementMap": {},
-    "fnMap": {},
-    "branchMap": {},
-    "s": {},
-    "f": {},
-    "b": {}
-  },
-  "/Users/tim.fisher/Documents/Code/githubsearch/src/generated/graphql.tsx": {
-    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/generated/graphql.tsx",
     "statementMap": {},
     "fnMap": {},
     "branchMap": {},

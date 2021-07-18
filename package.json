@@ -73,6 +73,7 @@
     "lint:fix": "eslint .  --ext .js,.jsx,.tsx --fix",
     "test": "react-scripts test --passWithNoTests",
     "test:e2e": "npx cypress open",
+    "test:e2e:run": "npx cypress run",
     "test:e2e:integration": "npx cypress run -e TAGS='not @smoke'",
     "test:e2e:smoke": "npx cypress run -e TAGS='@smoke'",
     "eject": "react-scripts eject",
@@ -102,6 +103,7 @@
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
+    "reporter": ["clover", "json", "json-summary", "text", "text-summary"],
     "all": true,
     "exclude": [
       "./src/generated/*"
