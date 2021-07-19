@@ -6,7 +6,7 @@ import styled from "styled-components";
 // TODO change this number and paginate if the user has a lot of repositories
 const MAX_REPOSITORIES = 25;
 // TODO change this number and paginate if we require more user results
-const MAX_USERS = 50;
+const MAX_USERS = 10;
 
 /**
  * App containing a search input and search results for github users
