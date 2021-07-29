@@ -2,7 +2,7 @@
 
 This project uses React, Apollo Client and Typescript to query data from the public GraphQL endpoint <https://api.github.com/graphql>
 
-Types were generated from the public schema using @graphql-codegen and referenced for types such as User for user results, Repository for repositories within the user results and typeDefs generated for the client local state and combined with additional client vars to store the search input value and also the returned users for reference for the autocomplete suggestions. I tried utilising the reactiveVar for the search input directly in the search query `eg. searchInputValue @client @export(as: "user")` but it didn't seem to update as often as the typing so referenced the reactiveVar with the useReactiveVar hook in SearchResultsContainer.
+Types were generated from the public schema using @graphql-codegen and referenced for types such as User for user results, Repository for repositories within the user results and typeDefs generated for the client local state and combined with additional client vars to store the search input value and also the returned users for reference for the autocomplete suggestions. 
 
 This project will not work without a github PAT. Once you have one insert it into .env as REACT_APP_GITHUB_AUTHTOKEN=<your PAT> see <https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token> for how to create a PAT. Tests marked @smoke will also not work locally without this token present.
 
