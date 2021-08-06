@@ -1,4 +1,5 @@
 import {
+  Button,
   createStyles,
   List,
   ListSubheader,
@@ -6,7 +7,7 @@ import {
   Theme,
   Typography,
 } from "@material-ui/core";
-import { Repository } from "../generated/graphql";
+import { PageInfo, Repository, SearchUserRepositoriesQuery } from "../generated/graphql";
 import RepositoryDetails from "./RepositoryDetails";
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -32,7 +33,38 @@ const NoRepositories = () => (
 );
 
 interface RepositoryListProps {
-  repositories: Repository[];
+  fetchMore: any;
+  repositories: SearchUserRepositoriesQuery | undefined;
+}
+
+const fetchLastOnClick = (fetchMore: any, pageInfo: 
+  { __typename?: 'PageInfo' }
+  & Pick<PageInfo, 'startCursor' | 'endCursor' | 'hasPreviousPage' | 'hasNextPage'>
+) => () => {
+  fetchMore({
+    variables: {
+      cursor: pageInfo.startCursor,
+    },
+    updateQuery: (prev: any, { fetchMoreResult }: any) => {
+      if (!fetchMoreResult) return prev;
+      return fetchMoreResult;    
+    }
+  });
+}
+
+const fetchMoreOnClick = (fetchMore: any, pageInfo: 
+  { __typename?: 'PageInfo' }
+  & Pick<PageInfo, 'startCursor' | 'endCursor' | 'hasPreviousPage' | 'hasNextPage'>
+) => () => {
+  fetchMore({
+    variables: {
+      cursor: pageInfo.endCursor,
+    },
+    updateQuery: (prev: any, { fetchMoreResult }: any) => {
+      if (!fetchMoreResult) return prev;
+      return fetchMoreResult;
+    }
+  });
 }
 
 /**
@@ -40,7 +72,9 @@ interface RepositoryListProps {
  *
  * @param repositories - An array of repositories to be mapped to individual dropdowns with information.
  */
-const RepositoryList = ({ repositories }: RepositoryListProps) => {
+const RepositoryList = ({ fetchMore, repositories }: RepositoryListProps) => {
+  const pageInfo = repositories?.repositoryOwner?.repositories.pageInfo;
+  const repositoryNodes = repositories?.repositoryOwner?.repositories?.nodes?.filter(Boolean) as Repository[] ?? [];
   const classes = useStyles();
   return (
     <List
@@ -53,8 +87,10 @@ const RepositoryList = ({ repositories }: RepositoryListProps) => {
       }
       className={classes.root}
     >
-      {repositories.length > 0 ? (
-        repositories.map(({ name, stargazerCount, url, watchers }) => (
+      {repositoryNodes.length > 0 && pageInfo?.hasPreviousPage && <Button variant="contained" color="primary" onClick={fetchLastOnClick(fetchMore, pageInfo)}>Load previous 10</Button>}
+      {repositoryNodes.length > 0 && pageInfo?.hasNextPage && <Button variant="contained" color="primary" onClick={fetchMoreOnClick(fetchMore, pageInfo)}>Load next 10</Button>}
+      {repositoryNodes.length > 0 ? (
+        repositoryNodes.map(({ name, stargazerCount, url, watchers }: Repository) => (
           <RepositoryDetails
             key={url}
             url={url}

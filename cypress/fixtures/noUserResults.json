@@ -1,5 +1,16 @@
 {
   "data": {
-    "search": { "nodes": [], "__typename": "SearchResultItemConnection" }
+    "search": {
+      "nodes": [
+      ],
+      "pageInfo": {
+        "startCursor": "Y3Vyc29yOjE=",
+        "endCursor": "Y3Vyc29yOjEw",
+        "hasPreviousPage": false,
+        "hasNextPage": true,
+        "__typename": "PageInfo"
+      },
+      "__typename": "SearchResultItemConnection"
+    }
   }
 }

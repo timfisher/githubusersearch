@@ -1,18 +1,19 @@
 import { makeVar, InMemoryCache, DocumentNode, gql } from "@apollo/client";
-import { typeDefs, User } from "../generated/graphql";
+import { User } from "../generated/graphql";
 import { mergeTypeDefs } from "@graphql-tools/merge";
+import { relayStylePagination } from "@apollo/client/utilities";
 
 // Define typeDefs for our client side variables
 const clientTypeDefs = gql`
   extend type LocalStateQuery {
     searchInputValue: String!
     users: [User!]!
+    repositories: [Repository!]!
   }
 `;
 
 // Merge typeDefs with code generated typeDefs
 export const extendedTypeDefs: DocumentNode = mergeTypeDefs([
-  typeDefs,
   clientTypeDefs,
 ]);
 

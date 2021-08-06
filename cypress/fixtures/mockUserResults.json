@@ -1,51 +1,30 @@
 {
-  "data": {
-    "search": {
-      "nodes": [
-        {
-          "repositories": {
-            "nodes": [
-              {
-                "name": "topQualityRepository",
-                "stargazerCount": 9999,
-                "watchers": {
-                  "totalCount": 9999,
-                  "__typename": "UserConnection"
-                },
-                "url": "https://github.com/timfisher",
-                "__typename": "Repository"
-              }
-            ],
-            "__typename": "RepositoryConnection"
+    "data": {
+      "search": {
+        "nodes": [
+          {
+            "id": "MDQ6VXNlcjEwMjQwMjU=",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/3307959?v=4",
+            "login": "timfisher",
+            "name": "Timothy Fisher",
+            "__typename": "User"
           },
-          "avatarUrl": "https://avatars.githubusercontent.com/u/3307959?v=4",
-          "login": "timfisher",
-          "name": "Timothy Fisher",
-          "__typename": "User"
+          {
+            "id": "MDQ6VXNlcjQ5OTU1MA==",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/3307959?v=4",
+            "login": "timfisher999",
+            "name": "Not Timothy Fisher",
+            "__typename": "User"
+          }
+        ],
+        "pageInfo": {
+          "startCursor": "Y3Vyc29yOjE=",
+          "endCursor": "Y3Vyc29yOjEw",
+          "hasPreviousPage": false,
+          "hasNextPage": true,
+          "__typename": "PageInfo"
         },
-        {
-          "repositories": {
-            "nodes": [
-              {
-                "name": "topQualityRepository",
-                "stargazerCount": 9999,
-                "watchers": {
-                  "totalCount": 9999,
-                  "__typename": "UserConnection"
-                },
-                "url": "https://github.com/timfisher",
-                "__typename": "Repository"
-              }
-            ],
-            "__typename": "RepositoryConnection"
-          },
-          "avatarUrl": "https://avatars.githubusercontent.com/u/3307959?v=4",
-          "login": "timfisher999",
-          "name": "Not Timothy Fisher",
-          "__typename": "User"
-        }
-      ],
-      "__typename": "SearchResultItemConnection"
+        "__typename": "SearchResultItemConnection"
+      }
     }
   }
-}

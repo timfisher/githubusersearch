@@ -15,7 +15,7 @@ Feature: Public Repository Search
 
         Examples:
             | username  | repository |
-            | benawad   | Greyscale  |
+            | benawad   | dogehouse  |
 
     Scenario Outline: Searching for a user that exists shows their public repositories
         Given there are mock user results
@@ -31,11 +31,11 @@ Feature: Public Repository Search
             | timfisher | topQualityRepository | 9999  | 9999     |
 
     Scenario Outline: Searching for a user that exists shows no public repositories if they have none
-        Given there is a user with no repositories
+    #     Given there is a user with no repositories
         Given the user searches for <username>
         Given the user presses the Show repositories for <username> button
         Then "No Repositories" is shown
 
         Examples:
             | username  |
-            | timfisher | 
+            | timfisherzerto | 
