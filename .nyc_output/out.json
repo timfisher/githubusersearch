@@ -312,35 +312,35 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 6,
-      "4": 1,
-      "5": 22,
-      "6": 22,
-      "7": 22,
-      "8": 1,
-      "9": 22
+      "0": 35,
+      "1": 9,
+      "2": 35,
+      "3": 54,
+      "4": 35,
+      "5": 198,
+      "6": 198,
+      "7": 198,
+      "8": 9,
+      "9": 198
     },
     "f": {
-      "0": 1,
-      "1": 6,
-      "2": 22,
-      "3": 1
+      "0": 9,
+      "1": 54,
+      "2": 198,
+      "3": 9
     },
     "b": {
       "0": [
-        2,
-        20
+        18,
+        180
       ],
       "1": [
-        22,
-        0
+        126,
+        72
       ],
       "2": [
-        22,
-        0
+        126,
+        72
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -613,21 +613,40 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 2,
-      "4": 1,
+      "0": 35,
+      "1": 11,
+      "2": 35,
+      "3": 26,
+      "4": 35,
       "5": 4,
       "6": 4,
       "7": 4,
-      "8": 20
+      "8": 20,
+      "9": 0,
+      "10": 33,
+      "11": 16,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 33,
+      "17": 40,
+      "18": 40,
+      "19": 40,
+      "20": 40,
+      "21": 160
     },
     "f": {
-      "0": 1,
-      "1": 2,
+      "0": 11,
+      "1": 26,
       "2": 4,
-      "3": 20
+      "3": 20,
+      "4": 0,
+      "5": 16,
+      "6": 0,
+      "7": 0,
+      "8": 40,
+      "9": 160
     },
     "b": {
       "0": [
@@ -637,6 +656,24 @@
       "1": [
         2,
         2
+      ],
+      "2": [
+        40,
+        20
+      ],
+      "3": [
+        40,
+        16,
+        0
+      ],
+      "4": [
+        40,
+        16,
+        16
+      ],
+      "5": [
+        16,
+        24
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -748,11 +785,11 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 1,
-      "4": 1
+      "0": 35,
+      "1": 35,
+      "2": 35,
+      "3": 35,
+      "4": 35
     },
     "f": {
       "0": 0,
@@ -1051,29 +1088,29 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 7,
-      "2": 1,
-      "3": 6,
-      "4": 6,
-      "5": 12,
-      "6": 6,
-      "7": 0,
-      "8": 7,
-      "9": 26
+      "0": 35,
+      "1": 315,
+      "2": 35,
+      "3": 222,
+      "4": 222,
+      "5": 520,
+      "6": 222,
+      "7": 4,
+      "8": 311,
+      "9": 1006
     },
     "f": {
-      "0": 7,
-      "1": 6,
-      "2": 12,
-      "3": 0,
-      "4": 7,
-      "5": 26
+      "0": 315,
+      "1": 222,
+      "2": 520,
+      "3": 4,
+      "4": 311,
+      "5": 1006
     },
     "b": {
       "0": [
-        6,
-        2
+        222,
+        78
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -1293,23 +1330,23 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 20,
-      "3": 20,
+      "0": 35,
+      "1": 35,
+      "2": 866,
+      "3": 866,
       "4": 0,
       "5": 0,
-      "6": 1,
+      "6": 35,
       "7": 0,
       "8": 0,
-      "9": 18,
-      "10": 18
+      "9": 586,
+      "10": 586
     },
     "f": {
-      "0": 20,
+      "0": 866,
       "1": 0,
       "2": 0,
-      "3": 18
+      "3": 586
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -1568,30 +1605,31 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 18,
-      "4": 18,
-      "5": 18,
-      "6": 18,
-      "7": 1,
-      "8": 1,
-      "9": 18
+      "0": 35,
+      "1": 29,
+      "2": 35,
+      "3": 586,
+      "4": 586,
+      "5": 586,
+      "6": 586,
+      "7": 569,
+      "8": 11,
+      "9": 28,
+      "10": 548
     },
     "f": {
-      "0": 1,
-      "1": 18,
-      "2": 1
+      "0": 29,
+      "1": 586,
+      "2": 11
     },
     "b": {
       "0": [
-        18,
-        2
+        586,
+        382
       ],
       "1": [
-        2,
-        16
+        22,
+        564
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -2004,43 +2042,43 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 20,
-      "2": 20,
-      "3": 20,
-      "4": 12,
-      "5": 20,
-      "6": 2,
-      "7": 20,
-      "8": 18,
-      "9": 2,
-      "10": 0,
-      "11": 2,
-      "12": 0,
-      "13": 2,
-      "14": 1,
-      "15": 2,
-      "16": 12
+      "0": 35,
+      "1": 866,
+      "2": 866,
+      "3": 866,
+      "4": 800,
+      "5": 866,
+      "6": 76,
+      "7": 866,
+      "8": 750,
+      "9": 116,
+      "10": 10,
+      "11": 106,
+      "12": 12,
+      "13": 94,
+      "14": 35,
+      "15": 66,
+      "16": 520
     },
     "f": {
-      "0": 20,
-      "1": 12,
-      "2": 2,
-      "3": 2,
-      "4": 12
+      "0": 866,
+      "1": 800,
+      "2": 76,
+      "3": 66,
+      "4": 520
     },
     "b": {
       "0": [
-        18,
-        2
+        750,
+        116
       ],
       "1": [
-        0,
-        2
+        10,
+        106
       ],
       "2": [
-        0,
-        2
+        12,
+        94
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -2098,11 +2136,11 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 16
+      "0": 35,
+      "1": 693
     },
     "f": {
-      "0": 16
+      "0": 693
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -2181,12 +2219,12 @@
     },
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 3,
-      "2": 1
+      "0": 35,
+      "1": 81,
+      "2": 35
     },
     "f": {
-      "0": 3
+      "0": 81
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -2389,23 +2427,23 @@
       }
     },
     "s": {
-      "0": 1,
-      "1": 1,
-      "2": 1,
-      "3": 9,
-      "4": 9,
-      "5": 1,
-      "6": 1,
-      "7": 1
+      "0": 35,
+      "1": 35,
+      "2": 35,
+      "3": 358,
+      "4": 358,
+      "5": 35,
+      "6": 35,
+      "7": 35
     },
     "f": {
-      "0": 1,
-      "1": 9,
-      "2": 1
+      "0": 35,
+      "1": 358,
+      "2": 35
     },
     "b": {
       "0": [
-        1,
+        35,
         0
       ]
     },
@@ -2439,12 +2477,228 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 1,
-      "1": 1
+      "0": 35,
+      "1": 35
     },
     "f": {},
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "5adc36c832ed60a3360dd7e1cac34fd936b1f698"
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/graphql.config.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/graphql.config.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/typescript-typedefs.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/typescript-typedefs.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/block-navigation.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/block-navigation.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/prettify.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/prettify.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/sorter.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/coverage/lcov-report/sorter.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/2.841affb7.chunk.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/2.841affb7.chunk.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/main.05caa491.chunk.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/main.05caa491.chunk.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/runtime-main.c002da70.js": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/build/static/js/runtime-main.c002da70.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/react-app-env.d.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/react-app-env.d.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/setupTests.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/setupTests.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/plugins/index.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/plugins/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/support/commands.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/support/commands.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/support/index.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/support/index.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/utils/graphqlUtils.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/utils/graphqlUtils.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/queries.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/src/apollo/queries.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/avatarSearch/avatarSearch.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/avatarSearch/avatarSearch.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/helpers.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/helpers.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/navigation.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/navigation.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/repositories.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/repositories.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/userSearch.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/userSearch.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/users.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/users.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/viewports.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/common/viewports.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/publicRepositorySearch/publicRepositorySearch.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/publicRepositorySearch/publicRepositorySearch.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/usernameSearch/usernameSearch.ts": {
+    "path": "/Users/tim.fisher/Documents/Code/githubsearch/cypress/integration/usernameSearch/usernameSearch.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
   }
 }

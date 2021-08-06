@@ -30,6 +30,7 @@ Feature: Public Repository Search
             | username  | repository           | stars | watchers |
             | timfisher | topQualityRepository | 9999  | 9999     |
 
+    @smoke
     Scenario Outline: Searching for a user that exists shows no public repositories if they have none
     #     Given there is a user with no repositories
         Given the user searches for <username>
@@ -37,5 +38,5 @@ Feature: Public Repository Search
         Then "No Repositories" is shown
 
         Examples:
-            | username  |
+            | username       |
             | timfisherzerto | 
