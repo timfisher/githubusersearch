@@ -1,12 +1,6 @@
-import { User } from "../generated/graphql";
+import { SearchUserQueryVariables, User, useSearchUserQuery } from "../generated/graphql";
 
-import {
-  SEARCH_USER_QUERY,
-  SearchUserQuery,
-  SearchUserVariables,
-} from "../apollo/queries";
-
-import { useQuery, useReactiveVar } from "@apollo/client";
+import { useReactiveVar } from "@apollo/client";
 
 import { searchInputValue, users } from "../apollo/cache";
 import { LoadingAnimation, SearchResult } from ".";
@@ -17,23 +11,21 @@ import { useEffect } from "react";
  * Container to return a list of Search Results @link SearchResult. Performs the query to fetch the user data.
  * Uses the user reactive var user to populate the username from the search input.
  *
- * @param maxUsers - A link to the github avatar.
- * @param maxRepositories - Their real name.
+ * @param maxUsers - Max users.
+ * @param maxRepositories - Max repositories.
  */
 const SearchResultsContainer = ({
   maxUsers,
-  maxRepositories,
-}: Pick<SearchUserVariables, "maxUsers" | "maxRepositories">) => {
+}: Pick<SearchUserQueryVariables, "maxUsers">) => {
   const user = useReactiveVar(searchInputValue);
   const {
     loading,
     error,
     data: searchResults,
-  } = useQuery<SearchUserQuery, SearchUserVariables>(SEARCH_USER_QUERY, {
+  } = useSearchUserQuery({
     variables: {
       user,
       maxUsers,
-      maxRepositories,
     },
   });
   // Filter only Users
@@ -44,6 +36,7 @@ const SearchResultsContainer = ({
   // Only set usersData if it changes and not due to rerenders
   useEffect(() => {
     users(usersData);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [usersData]);
 
   // Return a loading animation if the query is executing
@@ -55,7 +48,7 @@ const SearchResultsContainer = ({
   // Return no users message if none exist
   if (searchResults?.search.nodes?.length === 0) {
     return <p>No users found</p>;
-  }
+  } 
 
   return <SearchResults users={usersData} />;
 };
@@ -82,13 +75,12 @@ const SearchResults = ({ users }: SearchResultData) => {
       spacing={2}
     >
       {users.map(
-        ({ avatarUrl, login, name, repositories: { nodes: repositories } }) => (
+        ({ avatarUrl, login, name }: User) => (
           <SearchResult
             key={login}
             avatarUrl={avatarUrl}
             login={login}
             name={name}
-            repositories={repositories}
           />
         )
       )}

@@ -1,20 +1,18 @@
 {
-    "data": {
-      "search": {
-        "nodes": [
-          {
-            "repositories": {
-              "nodes": [],
-              "__typename": "RepositoryConnection"
-            },
-            "avatarUrl": "https://avatars.githubusercontent.com/u/3307959?v=4",
-            "login": "timfisher",
-            "name": "Random User",
-            "__typename": "User"
-          }
-        ],
-        "__typename": "SearchResultItemConnection"
-      }
+  "data": {
+    "repositoryOwner": {
+      "repositories": {
+        "nodes": [],
+        "pageInfo": {
+          "startCursor": "Y3Vyc29yOnYyOpLOAAHE184AI3sy",
+          "endCursor": "Y3Vyc29yOnYyOpLMqs4BkiHL",
+          "hasPreviousPage": false,
+          "hasNextPage": true,
+          "__typename": "PageInfo"
+        },
+        "__typename": "RepositoryConnection"
+      },
+      "__typename": "User"
     }
   }
-  
+}

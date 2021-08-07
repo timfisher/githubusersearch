@@ -1,0 +1,30 @@
+{
+    "data": {
+      "repositoryOwner": {
+        "repositories": {
+          "nodes": [
+            {
+                "id": "1",
+                "name": "topQualityRepository",
+                "stargazerCount": 9999,
+                "watchers": {
+                    "totalCount": 9999,
+                    "__typename": "UserConnection"
+                },
+                "url": "https://github.com/timfisher",
+                "__typename": "Repository"
+            }
+          ],
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpLOAAHE184AI3sy",
+            "endCursor": "Y3Vyc29yOnYyOpLMqs4BkiHL",
+            "hasPreviousPage": false,
+            "hasNextPage": true,
+            "__typename": "PageInfo"
+          },
+          "__typename": "RepositoryConnection"
+        },
+        "__typename": "User"
+      }
+    }
+  }

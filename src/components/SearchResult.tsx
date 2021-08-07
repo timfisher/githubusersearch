@@ -2,7 +2,7 @@ import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 
 import { Maybe } from "graphql/jsutils/Maybe";
-import { Repository } from "../generated/graphql";
+import { useSearchUserRepositoriesLazyQuery } from "../generated/graphql";
 import {
   Card,
   CardActionArea,
@@ -47,7 +47,6 @@ interface SearchResultProps {
   avatarUrl: string;
   name: Maybe<string> | undefined;
   login: string;
-  repositories: Maybe<Maybe<Repository>[]> | undefined;
 }
 
 /**
@@ -60,18 +59,23 @@ interface SearchResultProps {
  * @param avatarUrl - A link to the github avatar.
  * @param name - Their real name.
  * @param login - Their github id.
- * @param repositories - A list of public repositories associated with the user.
  */
 const SearchResult = ({
   avatarUrl,
   name,
   login,
-  repositories,
 }: SearchResultProps) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
+  const [getRepositories, { data, loading, fetchMore }] = useSearchUserRepositoriesLazyQuery({ variables: {
+    login,
+    first: 10,
+  }})
+
+  console.log(data)
 
   const handleExpandClick = () => {
+    getRepositories();
     setExpanded(!expanded);
   };
 
@@ -113,7 +117,17 @@ const SearchResult = ({
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <RepositoryList repositories={repositories as Repository[]} />
+            {loading ?   
+            <Typography
+              role="button"
+              align="right"
+              variant="body1"
+              color="textPrimary"
+              aria-label={`Show repositories for ${login}`}
+            >
+              Loading Repositories
+            </Typography> :
+            <RepositoryList fetchMore={fetchMore} repositories={data} />}
           </CardContent>
         </Collapse>
       </Card>
